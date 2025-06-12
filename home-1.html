@@ -875,37 +875,36 @@
 
         animatedElements.forEach(element => observer.observe(element));
     </script>
-    <script>
-        const cssOptions = document.querySelectorAll(".css-option");
-        const cssLink = document.getElementById("themeStylesheet");
+   <script>
+  const cssOptions = document.querySelectorAll(".css-option");
+  const cssLink = document.getElementById("themeStylesheet");
 
-        // Load saved version
-        const savedVersion = localStorage.getItem("selectedCSS");
-        if (savedVersion) {
-            cssLink.href = savedVersion;
-            highlightSelected(savedVersion);
-        }
+  // ✅ Check localStorage, else default to v-1.css
+  const savedVersion = localStorage.getItem("selectedCSS") || "v-1.css";
+  cssLink.href = savedVersion;
+  highlightSelected(savedVersion);
 
-        cssOptions.forEach(option => {
-            option.addEventListener("click", function (e) {
-                e.preventDefault();
-                const cssFile = this.getAttribute("data-css");
-                cssLink.href = cssFile;
-                localStorage.setItem("selectedCSS", cssFile);
-                highlightSelected(cssFile);
-            });
-        });
+  cssOptions.forEach(option => {
+    option.addEventListener("click", function (e) {
+      e.preventDefault();
+      const cssFile = this.getAttribute("data-css");
+      cssLink.href = cssFile;
+      localStorage.setItem("selectedCSS", cssFile);
+      highlightSelected(cssFile);
+    });
+  });
 
-        function highlightSelected(fileName) {
-            cssOptions.forEach(opt => {
-                if (opt.getAttribute("data-css") === fileName) {
-                    opt.innerHTML = '✔️ ' + opt.textContent.trim();
-                } else {
-                    opt.innerHTML = opt.textContent.replace('✔️ ', '').trim();
-                }
-            });
-        }
-    </script>
+  function highlightSelected(fileName) {
+    cssOptions.forEach(opt => {
+      const name = opt.getAttribute("data-css");
+      if (name === fileName) {
+        opt.innerHTML = '✔️ ' + opt.textContent.trim().replace('✔️', '');
+      } else {
+        opt.innerHTML = opt.textContent.trim().replace('✔️', '');
+      }
+    });
+  }
+</script>
 
 
 </body>
