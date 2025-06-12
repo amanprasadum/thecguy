@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Caulking Guy - Sydney's Premier Caulking Specialists</title>
+
+    <!-- External Libraries -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <!-- <link rel="stylesheet" href="style-2.css"> -->
-    <!-- <link rel="stylesheet" href="v-2.css"> -->
-    <link rel="stylesheet" href="v-3.css">
+
+    <!-- Dynamic CSS Loader (default set to v-3.css) -->
+    <link id="themeStylesheet" rel="stylesheet" href="v-3.css">
 </head>
+
 
 <body>
     <div class="custom-cursor"></div>
@@ -50,13 +53,23 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+
+                    <!-- ✅ Corrected CSS Version Switcher -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Style
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item css-option" data-css="v-1.css" href="#">Version 1</a></li>
+                            <li><a class="dropdown-item css-option" data-css="v-2.css" href="#">Version 2</a></li>
+                            <li><a class="dropdown-item css-option" data-css="v-3.css" href="#">Version 3</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <!-- <button class="theme-toggle" onclick="toggleTheme()">
-                    <i class="fas fa-moon"></i>
-                </button> -->
             </div>
         </div>
     </nav>
+
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
@@ -862,6 +875,27 @@
 
         animatedElements.forEach(element => observer.observe(element));
     </script>
+    <script>
+        const cssOptions = document.querySelectorAll(".css-option");
+        const cssLink = document.getElementById("themeStylesheet");
+
+        // Load saved version if it exists
+        const savedVersion = localStorage.getItem("selectedCSS");
+        if (savedVersion) {
+            cssLink.href = savedVersion;
+        }
+
+        // On dropdown item click
+        cssOptions.forEach(option => {
+            option.addEventListener("click", function (e) {
+                e.preventDefault();
+                const cssFile = this.getAttribute("data-css");
+                cssLink.href = cssFile;
+                localStorage.setItem("selectedCSS", cssFile);
+            });
+        });
+    </script>
+
 </body>
 
 </html>
