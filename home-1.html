@@ -879,22 +879,34 @@
         const cssOptions = document.querySelectorAll(".css-option");
         const cssLink = document.getElementById("themeStylesheet");
 
-        // Load saved version if it exists
+        // Load saved version
         const savedVersion = localStorage.getItem("selectedCSS");
         if (savedVersion) {
             cssLink.href = savedVersion;
+            highlightSelected(savedVersion);
         }
 
-        // On dropdown item click
         cssOptions.forEach(option => {
             option.addEventListener("click", function (e) {
                 e.preventDefault();
                 const cssFile = this.getAttribute("data-css");
                 cssLink.href = cssFile;
                 localStorage.setItem("selectedCSS", cssFile);
+                highlightSelected(cssFile);
             });
         });
+
+        function highlightSelected(fileName) {
+            cssOptions.forEach(opt => {
+                if (opt.getAttribute("data-css") === fileName) {
+                    opt.innerHTML = '✔️ ' + opt.textContent.trim();
+                } else {
+                    opt.innerHTML = opt.textContent.replace('✔️ ', '').trim();
+                }
+            });
+        }
     </script>
+
 
 </body>
 
