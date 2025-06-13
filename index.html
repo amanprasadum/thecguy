@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Caulking Guy - Sydney's Premier Caulking Specialists</title>
+
+    <!-- External Libraries -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    
+
+    <!-- Dynamic CSS Loader (default set to v-3.css) -->
+    <link id="themeStylesheet" rel="stylesheet" href="v-1.css">
 </head>
+
 
 <body>
     <div class="custom-cursor"></div>
@@ -49,18 +53,30 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+
+                    <!-- ✅ Corrected CSS Version Switcher -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Choose Version
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item css-option" data-css="v-1.css" href="#">Version 1</a></li>
+                            <li><a class="dropdown-item css-option" data-css="v-2.css" href="#">Version 2</a></li>
+                            <li><a class="dropdown-item css-option" data-css="v-3.css" href="#">Version 3</a></li>
+                            <li><a class="dropdown-item css-option" data-css="v-4.css" href="#">Version 4</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <button class="theme-toggle" onclick="toggleTheme()">
-                    <i class="fas fa-moon"></i>
-                </button>
             </div>
         </div>
     </nav>
 
+
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://thecaulkingguy.com.au/wp-content/themes/TheCaulkingGuy/assets/video/banner_video.mp4" type="video/mp4">
+            <source src="https://thecaulkingguy.com.au/wp-content/themes/TheCaulkingGuy/assets/video/banner_video.mp4"
+                type="video/mp4">
         </video>
         <div class="hero-overlay"></div>
         <div class="hero-content" data-aos="fade-up">
@@ -88,7 +104,8 @@
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="video-card">
                         <video muted loop>
-                            <source src="https://thecaulkingguy.com.au/wp-content/themes/TheCaulkingGuy/assets/video/banner_video.mp4"
+                            <source
+                                src="https://thecaulkingguy.com.au/wp-content/themes/TheCaulkingGuy/assets/video/banner_video.mp4"
                                 type="video/mp4">
                         </video>
                         <div class="play-button" onclick="playVideo(this)">
@@ -103,7 +120,8 @@
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="video-card">
                         <video muted loop>
-                            <source src="https://thecaulkingguy.com.au/wp-content/themes/TheCaulkingGuy/assets/video/banner_video.mp4"
+                            <source
+                                src="https://thecaulkingguy.com.au/wp-content/themes/TheCaulkingGuy/assets/video/banner_video.mp4"
                                 type="video/mp4">
                         </video>
                         <div class="play-button" onclick="playVideo(this)">
@@ -274,48 +292,42 @@
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item" data-category="bathroom" data-aos="fade-up">
-                    <img src="https://via.placeholder.com/400x300/2563eb/white?text=Bathroom+Project+1"
-                        alt="Bathroom Caulking">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Bathroom Caulking">
                     <div class="portfolio-overlay">
                         <h4>Modern Bathroom Renovation</h4>
                         <p>Complete caulking and waterproofing for a luxury bathroom renovation in Double Bay</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="kitchen" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://via.placeholder.com/400x300/06b6d4/white?text=Kitchen+Project+1"
-                        alt="Kitchen Sealing">
+                    <img src="https://images.unsplash.com/photo-1600585153490-76fb20a32601" alt="Kitchen Sealing">
                     <div class="portfolio-overlay">
                         <h4>Gourmet Kitchen Sealing</h4>
                         <p>Marble countertop and glass tile backsplash sealing in Bondi Beach home</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="exterior" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://via.placeholder.com/400x300/f59e0b/white?text=Exterior+Project+1"
-                        alt="Exterior Caulking">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="Exterior Caulking">
                     <div class="portfolio-overlay">
                         <h4>Exterior Weatherproofing</h4>
                         <p>Window and door frame sealing for heritage home in Paddington</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="commercial" data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://via.placeholder.com/400x300/8b5cf6/white?text=Commercial+Project+1"
-                        alt="Commercial Caulking">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c" alt="Commercial Caulking">
                     <div class="portfolio-overlay">
                         <h4>Office Building Sealing</h4>
                         <p>Large-scale commercial caulking project for Sydney CBD office complex</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="bathroom" data-aos="fade-up" data-aos-delay="400">
-                    <img src="https://via.placeholder.com/400x300/ef4444/white?text=Bathroom+Project+2"
-                        alt="Bathroom Renovation">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba" alt="Bathroom Renovation">
                     <div class="portfolio-overlay">
                         <h4>Bathroom Restoration</h4>
                         <p>Shower and bathtub re-caulking for period home in Surry Hills</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="kitchen" data-aos="fade-up" data-aos-delay="500">
-                    <img src="https://via.placeholder.com/400x300/10b981/white?text=Kitchen+Project+2"
-                        alt="Kitchen Renovation">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba" alt="Kitchen Renovation">
                     <div class="portfolio-overlay">
                         <h4>Contemporary Kitchen</h4>
                         <p>Quartz countertop and subway tile sealing in Manly apartment</p>
@@ -327,6 +339,18 @@
 
     <!-- Process Section -->
     <section id="process" class="process-section">
+        <div class="animated-bg">
+            <div class="culd"></div>
+            <div class="culd"></div>
+            <div class="culd"></div>
+            <div class="culd"></div>
+            <div class="culd"></div>
+            <div class="culd"></div>
+            <div class="culd"></div>
+            <div class="culd"></div>
+            <div class="culd"></div>
+            <div class="culd"></div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center mb-5">
@@ -388,7 +412,8 @@
             <div class="row justify-content-center g-4">
                 <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="100">
                     <div class="team-card">
-                        <img src="https://via.placeholder.com/200x200/2563eb/white?text=Mike" alt="Mike Johnson">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+                            alt="Mike Johnson, Founder & Lead Technician">
                         <div class="team-overlay">
                             <a href="mailto:mike@caulkingguy.com.au"><i class="fas fa-envelope"></i></a>
                         </div>
@@ -398,7 +423,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
                     <div class="team-card">
-                        <img src="https://via.placeholder.com/200x200/06b6d4/white?text=Sarah" alt="Sarah Wilson">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+                            alt="Sarah Wilson, Project Manager">
                         <div class="team-overlay">
                             <a href="mailto:sarah@caulkingguy.com.au"><i class="fas fa-envelope"></i></a>
                         </div>
@@ -408,7 +434,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
                     <div class="team-card">
-                        <img src="https://via.placeholder.com/200x200/f59e0b/white?text=David" alt="David Chen">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+                            alt="David Chen, Senior Caulking Specialist">
                         <div class="team-overlay">
                             <a href="mailto:david@caulkingguy.com.au"><i class="fas fa-envelope"></i></a>
                         </div>
@@ -521,7 +548,6 @@
             </div>
         </div>
     </section>
-
     <!-- FAQ Section -->
     <section class="faq-section">
         <div class="container">
@@ -850,6 +876,38 @@
 
         animatedElements.forEach(element => observer.observe(element));
     </script>
+   <script>
+  const cssOptions = document.querySelectorAll(".css-option");
+  const cssLink = document.getElementById("themeStylesheet");
+
+  // ✅ Check localStorage, else default to v-1.css
+  const savedVersion = localStorage.getItem("selectedCSS") || "v-1.css";
+  cssLink.href = savedVersion;
+  highlightSelected(savedVersion);
+
+  cssOptions.forEach(option => {
+    option.addEventListener("click", function (e) {
+      e.preventDefault();
+      const cssFile = this.getAttribute("data-css");
+      cssLink.href = cssFile;
+      localStorage.setItem("selectedCSS", cssFile);
+      highlightSelected(cssFile);
+    });
+  });
+
+  function highlightSelected(fileName) {
+    cssOptions.forEach(opt => {
+      const name = opt.getAttribute("data-css");
+      if (name === fileName) {
+        opt.innerHTML = '✔️ ' + opt.textContent.trim().replace('✔️', '');
+      } else {
+        opt.innerHTML = opt.textContent.trim().replace('✔️', '');
+      }
+    });
+  }
+</script>
+
+
 </body>
 
 </html>
