@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About The Caulking Guy - Sydney's Premier Caulking Specialists</title>
+
+    <!-- External Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Dynamic CSS Loader -->
+    <link id="themeStylesheet" rel="stylesheet" href="assets/css/style.css">
+   
+</head>
+<body>
+    <!-- About Hero Section -->
+    <section class="tcg-about-hero text-center">
+        <div class="container">
+            <h1 data-aos="fade-up">About The Caulking Guy</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Sydney's Premier Caulking Specialists</p>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="tcg-about-content">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="tcg-about-image" data-aos="fade-right">
+                        <img src="https://thecaulkingguy.com.au/wp-content/uploads/2024/05/img05.jpg" alt="Caulking Project">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tcg-about-card" data-aos="fade-left">
+                        <h3>Welcome to The Caulking Guys</h3>
+                        <p>Welcome to The Caulking Guys, your go-to experts for the Best Caulking Service in Sydney. We are proud to be recognized as the top Sydney caulker, known for our exceptional work quality, attention to detail, and unwavering commitment to excellence.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="tcg-about-card" data-aos="fade-up">
+                        <h3>What is so special about our caulker in Sydney?</h3>
+                        <p>At The Caulking Guys, we stand out because of our:</p>
+                        <ul>
+                            <li><strong>Expertise:</strong> Our team brings years of experience and specialized knowledge to every project.</li>
+                            <li><strong>Quality:</strong> We use premium materials and techniques to ensure lasting results.</li>
+                            <li><strong>Reliability:</strong> We deliver on time, every time, with consistent professionalism.</li>
+                            <li><strong>Customer Satisfaction:</strong> Your satisfaction is our priority, and we go above and beyond to exceed expectations.</li>
+                        </ul>
+                        <p>Choosing The Caulking Guys means choosing unparalleled expertise and quality. Whether you have a residential, commercial, or industrial project, we bring the same level of dedication and professionalism to every job.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="tcg-cta-section">
+        <div class="container">
+            <h2 data-aos="zoom-in">Ready to Start Your Next Project?</h2>
+            <p data-aos="zoom-in" data-aos-delay="100">We would love to hear from you and discuss how we can help with your caulking needs. Contact us today to know more about our caulking service or schedule a consultation.</p>
+            <a href="#contact" class="tcg-btn-cta" data-aos="zoom-in" data-aos-delay="200">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-section">
+                        <h5>About The Caulking Guy</h5>
+                        <p>Sydney's premier caulking specialists, providing high-quality sealing and waterproofing solutions for homes and businesses since 2008.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-section">
+                        <h5>Quick Links</h5>
+                        <a href="#home" class="footer-link">Home</a>
+                        <a href="#about" class="footer-link">About</a>
+                        <a href="#services" class="footer-link">Services</a>
+                        <a href="#portfolio" class="footer-link">Portfolio</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-section">
+                        <h5>Contact Us</h5>
+                        <p><i class="fas fa-phone"></i> (02) 1234 5678</p>
+                        <p><i class="fas fa-envelope"></i> info@caulkingguy.com.au</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Sydney Rd, NSW 2000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>© 2025 The Caulking Guy. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Scroll to Top
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Intersection Observer for Animations
+        const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        animatedElements.forEach(element => observer.observe(element));
+    </script>
+</body>
+</html>
