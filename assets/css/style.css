@@ -319,6 +319,7 @@
  /* -------------------------------- about us section start -------------------------------- */
  /* About Section Styles with tcg- prefix */
  .tcg-about-hero {
+    margin-top: 80px;
      background: var(--gradient-hero);
      color: var(--bg-white);
      padding: 6rem 0 8rem;
