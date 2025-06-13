@@ -24,7 +24,7 @@
         <div class="container">
             <a class="navbar-brand" href="#home">
                 <i class="fas fa-tools"></i> The Caulking Guy
-                 <!-- <img class="img-fluid" alt="" srcset="" src="./assets/images/tcg.jpg"> -->
+                <!-- <img class="img-fluid" alt="" srcset="" src="./assets/images/tcg.jpg"> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -72,60 +72,95 @@
     <!-- About Hero Section -->
     <section class="tcg-about-hero text-center">
         <div class="container">
-            <h1 data-aos="fade-up">About The Caulking Guy</h1>
+            <h1 data-aos="fade-up">Contact Us</h1>
             <p data-aos="fade-up" data-aos-delay="100">Sydney's Premier Caulking Specialists</p>
         </div>
     </section>
 
-    <!-- About Content Section -->
-    <section class="tcg-about-content">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="tcg-about-image" data-aos="fade-right">
-                        <img src="https://thecaulkingguy.com.au/wp-content/uploads/2024/05/img05.jpg"
-                            alt="Caulking Project">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="tcg-about-card" data-aos="fade-left">
-                        <h3>Welcome to The Caulking Guys</h3>
-                        <p>Welcome to The Caulking Guys, your go-to experts for the Best Caulking Service in Sydney. We
-                            are proud to be recognized as the top Sydney caulker, known for our exceptional work
-                            quality, attention to detail, and unwavering commitment to excellence.</p>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="tcg-about-card" data-aos="fade-up">
-                        <h3>What is so special about our caulker in Sydney?</h3>
-                        <p>At The Caulking Guys, we stand out because of our:</p>
-                        <ul>
-                            <li><strong>Expertise:</strong> Our team brings years of experience and specialized
-                                knowledge to every project.</li>
-                            <li><strong>Quality:</strong> We use premium materials and techniques to ensure lasting
-                                results.</li>
-                            <li><strong>Reliability:</strong> We deliver on time, every time, with consistent
-                                professionalism.</li>
-                            <li><strong>Customer Satisfaction:</strong> Your satisfaction is our priority, and we go
-                                above and beyond to exceed expectations.</li>
-                        </ul>
-                        <p>Choosing The Caulking Guys means choosing unparalleled expertise and quality. Whether you
-                            have a residential, commercial, or industrial project, we bring the same level of dedication
-                            and professionalism to every job.</p>
-                    </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Contact us for a free quote or
+                        consultation</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="tcg-cta-section">
-        <div class="container">
-            <h2 data-aos="zoom-in">Ready to Start Your Next Project?</h2>
-            <p data-aos="zoom-in" data-aos-delay="100">We would love to hear from you and discuss how we can help with
-                your caulking needs. Contact us today to know more about our caulking service or schedule a
-                consultation.</p>
-            <a href="#contact" class="tcg-btn-cta" data-aos="zoom-in" data-aos-delay="200">Get in Touch</a>
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Contact Information</h3>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h5>Phone</h5>
+                            <p>(02) 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h5>Email</h5>
+                            <p>info@caulkingguy.com.au</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h5>Address</h5>
+                            <p>123 Sydney Rd, NSW 2000, Australia</p>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/caulkingguy" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/caulkingguy" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/caulkingguy" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="map-placeholder" data-aos="fade-up" data-aos-delay="200"></div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <h3>Request a Quote</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder=" " required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="" disabled selected></option>
+                                <option value="bathroom">Bathroom Caulking</option>
+                                <option value="kitchen">Kitchen Sealing</option>
+                                <option value="exterior">Exterior Caulking</option>
+                                <option value="commercial">Commercial Services</option>
+                                <option value="repair">Repair & Maintenance</option>
+                                <option value="waterproofing">Waterproofing</option>
+                            </select>
+                            <label for="service">Service Type</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder=" " required></textarea>
+                            <label for="message">Project Details</label>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit Request <span class="loading"
+                                style="display: none;"></span></button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
