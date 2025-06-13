@@ -1,6 +1,6 @@
  :root {
-     /* --primary-color: #2563eb; */
-     --primary-color: #0c1946;
+     --primary-color: #2563eb;
+     /* --primary-color: #0c1946; */
      --primary-dark: #1d4ed8;
      --secondary-color: #f59e0b;
      --accent-color: #06b6d4;
@@ -12,12 +12,12 @@
      --shadow-light: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
      --shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
      --shadow-large: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-     /* --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%); */
-     --gradient-primary: #0c1946;
-     --gradient-secondary: #0c1946;
-     /* --gradient-secondary: linear-gradient(135deg, var(--secondary-color) 0%, #f97316 100%); */
-     /* --gradient-hero: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(6, 182, 212, 0.9) 100%); */
-     --gradient-hero: #0c1946;
+     --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+     /* --gradient-primary: #0c1946;
+     --gradient-secondary: #0c1946; */
+     --gradient-secondary: linear-gradient(135deg, var(--secondary-color) 0%, #f97316 100%);
+     --gradient-hero: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(6, 182, 212, 0.9) 100%);
+     /* --gradient-hero: #0c1946; */
  }
 
  [data-theme="dark"] {
