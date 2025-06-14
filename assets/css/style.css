@@ -13,8 +13,8 @@
     --text-light: #f9fafb;            /* Light text for dark backgrounds */
     
     /* Background Colors */
-    /* --bg-light: #f8fafc;              */
-    --bg-light: #d7e0e9;               /* Light background */
+    --bg-light: #f8fafc;             
+    /* --bg-light: #d7e0e9;               */
     --bg-white: #ffffff;              /* Pure white background */
     --bg-primary: #1e40af;            /* Primary background */
     --bg-dark: #1f2937;               /* Dark background */
