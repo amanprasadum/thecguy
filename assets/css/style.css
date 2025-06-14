@@ -110,7 +110,7 @@ body {
     background: rgba(30, 64, 175, 0.1);
     transform: translateY(-2px);
 } */
-/* Enhanced Navbar Styles */
+ /* Enhanced Navbar Styles */
 .navbar {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
@@ -288,7 +288,278 @@ body {
     color: var(--secondary-color) !important;
 }
 
-/* Enhanced Dropdown */
+/* Mega Menu Styles */
+.mega-dropdown {
+    position: static;
+}
+
+.mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: none;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    padding: 2.5rem 0;
+    margin-top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 1000;
+    min-height: 400px;
+}
+
+[data-theme="dark"] .mega-menu {
+    background: rgba(31, 41, 55, 0.98);
+    border-bottom: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+.mega-dropdown:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.mega-menu-section {
+    padding: 1rem;
+    border-radius: 16px;
+    background: rgba(248, 250, 252, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(226, 232, 240, 0.3);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .mega-menu-section {
+    background: rgba(55, 65, 81, 0.7);
+    border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+.mega-menu-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="dark"] .mega-menu-section:hover {
+    background: rgba(55, 65, 81, 0.9);
+}
+
+.mega-menu-title {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid rgba(30, 64, 175, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.mega-menu-title i {
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.mega-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mega-menu-list li {
+    margin-bottom: 0.75rem;
+}
+
+.mega-menu-list a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    display: block;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.mega-menu-list a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.mega-menu-list a:hover {
+    color: var(--primary-color);
+    background: rgba(30, 64, 175, 0.05);
+    transform: translateX(8px);
+    font-weight: 600;
+}
+
+.mega-menu-list a:hover::before {
+    transform: scaleY(1);
+}
+
+/* Highlight Section for Popular Services */
+.highlight-section {
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.08), rgba(59, 130, 246, 0.04));
+    border: 2px solid rgba(30, 64, 175, 0.15);
+}
+
+.highlight-section .mega-menu-title {
+    color: var(--primary-color);
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(59, 130, 246, 0.05));
+    padding: 0.75rem;
+    border-radius: 12px;
+    border-bottom: none;
+    margin-bottom: 1.5rem;
+}
+
+.popular-service {
+    margin-bottom: 1.5rem;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-align: center;
+    border: 1px solid rgba(226, 232, 240, 0.5);
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .service-card {
+    background: rgba(31, 41, 55, 0.9);
+    border: 1px solid rgba(75, 85, 99, 0.5);
+}
+
+.service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.15);
+}
+
+.service-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.service-card h6 {
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.service-card p {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+/* Mega Menu Footer CTA */
+.mega-menu-footer {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(30, 64, 175, 0.1);
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.05), rgba(59, 130, 246, 0.02));
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.cta-content h5 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.cta-content p {
+    color: var(--text-secondary);
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+.mega-cta-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.3);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.mega-cta-btn:hover {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(30, 64, 175, 0.4);
+}
+
+/* Mobile Mega Menu */
+@media (max-width: 991.98px) {
+    .mega-menu {
+        position: static !important;
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        background: transparent;
+        backdrop-filter: none;
+        box-shadow: none;
+        padding: 1rem 0;
+        border-radius: 16px;
+        margin-top: 0.5rem;
+        min-height: auto;
+    }
+    
+    .mega-menu .container {
+        padding: 0;
+    }
+    
+    .mega-menu-section {
+        margin-bottom: 1.5rem;
+        background: rgba(248, 250, 252, 0.9);
+    }
+    
+    .mega-menu-footer {
+        margin-top: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .mega-cta-btn {
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .cta-content {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
 .custom-dropdown {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
@@ -336,15 +607,8 @@ body {
 
 /* Animations */
 @keyframes pulse {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
 }
 
 @keyframes slideInDown {
@@ -352,7 +616,6 @@ body {
         opacity: 0;
         transform: translateY(-20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -375,27 +638,27 @@ body {
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         border: 1px solid rgba(226, 232, 240, 0.3);
     }
-
+    
     [data-theme="dark"] .navbar-collapse {
         background: rgba(31, 41, 55, 0.98);
         border: 1px solid rgba(75, 85, 99, 0.3);
     }
-
+    
     .navbar-nav {
         gap: 0.5rem;
     }
-
+    
     .nav-link {
         padding: 1rem 1.5rem !important;
         margin: 0.25rem 0;
         justify-content: flex-start;
     }
-
+    
     .contact-btn {
         margin-left: 0;
         margin-top: 0.5rem;
     }
-
+    
     .custom-dropdown {
         position: static !important;
         transform: none !important;
@@ -1651,7 +1914,6 @@ body {
     background: var(--bg-white);
     color: var(--text-primary);
 }
-
 /*  ================================  FAQ Section End ========================================== */
 
 /*  ================================ Contact Section Start  ================================*/
@@ -1709,7 +1971,6 @@ body {
     color: var(--text-secondary);
     margin-bottom: 3rem;
 }
-
 .section-subtitle-light {
     font-size: 1.1rem;
     color: #ffffff;
@@ -2031,8 +2292,7 @@ body {
         padding: 1.5rem;
     }
 }
-
-/* ================================ Contact Secton End  ================================ */
+ /* ================================ Contact Secton End  ================================ */
 /* Footer */
 .footer {
     background: var(--bg-dark);
@@ -2452,22 +2712,21 @@ body {
         animation: none;
     }
 }
-
-/* Scroll to Top Button */
-.scroll-top {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 50px;
-    height: 50px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 1000;
-}
+ /* Scroll to Top Button */
+ .scroll-top {
+     position: fixed;
+     bottom: 2rem;
+     right: 2rem;
+     width: 50px;
+     height: 50px;
+     background: var(--primary-color);
+     border-radius: 50%;
+     border: none;
+     color: white;
+     font-size: 1.2rem;
+     cursor: pointer;
+     opacity: 0;
+     visibility: hidden;
+     transition: all 0.3s ease;
+     z-index: 1000;
+ }
