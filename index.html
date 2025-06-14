@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Caulking Guy - Sydney's Premier Caulking Specialists</title>
@@ -22,7 +21,7 @@
     <div class="custom-cursor"></div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <!-- <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">
                 <i class="fas fa-tools"></i> The Caulking Guy
@@ -53,8 +52,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./contact.html">Contact</a>
                     </li>
-
-                    <!-- ✅ Corrected CSS Version Switcher -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             Choose Version
@@ -69,9 +66,88 @@
                 </ul>
             </div>
         </div>
+    </nav> -->
+
+    <!-- Enhanced Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <div class="brand-content">
+                    <i class="fas fa-tools brand-icon"></i>
+                    <span class="brand-text">The Caulking Guy</span>
+                </div>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">
+                            <i class="fas fa-home nav-icon"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">
+                            <i class="fas fa-user nav-icon"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            <i class="fas fa-cogs nav-icon"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">
+                            <i class="fas fa-briefcase nav-icon"></i>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process">
+                            <i class="fas fa-tasks nav-icon"></i>
+                            <span>Process</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">
+                            <i class="fas fa-star nav-icon"></i>
+                            <span>Reviews</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-btn" href="./contact.html">
+                            <i class="fas fa-phone nav-icon"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle version-switcher" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            <i class="fas fa-palette nav-icon"></i>
+                            <span>Versions</span>
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown">
+                            <li><a class="dropdown-item css-option" data-css="v-1.css" href="#"><i
+                                        class="fas fa-paint-brush"></i> Version 1</a></li>
+                            <li><a class="dropdown-item css-option" data-css="v-2.css" href="#"><i
+                                        class="fas fa-palette"></i> Version 2</a></li>
+                            <li><a class="dropdown-item css-option" data-css="v-3.css" href="#"><i
+                                        class="fas fa-magic"></i> Version 3</a></li>
+                            <li><a class="dropdown-item css-option" data-css="v-4.css" href="#"><i
+                                        class="fas fa-sparkles"></i> Version 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-
-
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <video class="hero-video" autoplay muted loop>
