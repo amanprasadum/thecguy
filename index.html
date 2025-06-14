@@ -634,106 +634,209 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials-section">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="thecguytestimonial-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="section-title" data-aos="fade-up">What Our Clients Say</h2>
-                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Real reviews from satisfied
-                        customers</p>
+                    <h2 class="thecguytestimonial-title" data-aos="fade-up">What Our Clients Say</h2>
+                    <p class="thecguytestimonial-subtitle" data-aos="fade-up" data-aos-delay="200">Don't just take our
+                        word for it - hear from our satisfied customers</p>
                 </div>
             </div>
-            <div class="testimonial-grid">
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="testimonial-card-inner">
-                        <div class="testimonial-front">
-                            <div class="quote-icon">
-                                <i class="fas fa-quote-left"></i>
+
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div id="testimonialCarousel" class="carousel slide thecguytestimonial-carousel"
+                        data-bs-ride="carousel" data-bs-interval="5000">
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators thecguytestimonial-indicators">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4"></button>
+                        </div>
+
+                        <!-- Carousel Inner -->
+                        <div class="carousel-inner">
+                            <!-- Testimonial 1 -->
+                            <div class="carousel-item active">
+                                <div class="thecguytestimonial-card">
+                                    <div class="thecguytestimonial-quote-icon">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <div class="thecguytestimonial-content">
+                                        <p class="thecguytestimonial-text">"Absolutely fantastic work! The team at The
+                                            Caulking Guy transformed our bathroom. The attention to detail was
+                                            incredible, and the waterproofing has been perfect for over a year now.
+                                            Highly recommended!"</p>
+                                        <div class="thecguytestimonial-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="thecguytestimonial-author">
+                                            <div class="thecguytestimonial-avatar">
+                                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
+                                                    alt="Michael Chen">
+                                            </div>
+                                            <div class="thecguytestimonial-info">
+                                                <h5>Michael Chen</h5>
+                                                <p>Homeowner, Bondi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p>"Exceptional work! Mike and his team completely transformed our bathroom. The caulking is
-                                perfect and has stayed pristine for over a year."</p>
-                            <div class="testimonial-avatar">
-                                <img src="https://via.placeholder.com/80x80/2563eb/white?text=JM" alt="Jennifer Martin">
+
+                            <!-- Testimonial 2 -->
+                            <div class="carousel-item">
+                                <div class="thecguytestimonial-card">
+                                    <div class="thecguytestimonial-quote-icon">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <div class="thecguytestimonial-content">
+                                        <p class="thecguytestimonial-text">"Professional, punctual, and pristine work.
+                                            They sealed our kitchen backsplash and around the windows perfectly. No more
+                                            water damage concerns. The team was clean, efficient, and very reasonably
+                                            priced."</p>
+                                        <div class="thecguytestimonial-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="thecguytestimonial-author">
+                                            <div class="thecguytestimonial-avatar">
+                                                <img src="https://images.unsplash.com/photo-1494790108755-2616c3e2c0e8?w=80&h=80&fit=crop&crop=face"
+                                                    alt="Sarah Williams">
+                                            </div>
+                                            <div class="thecguytestimonial-info">
+                                                <h5>Sarah Williams</h5>
+                                                <p>Property Manager, Manly</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h5>Jennifer Martin</h5>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+
+                            <!-- Testimonial 3 -->
+                            <div class="carousel-item">
+                                <div class="thecguytestimonial-card">
+                                    <div class="thecguytestimonial-quote-icon">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <div class="thecguytestimonial-content">
+                                        <p class="thecguytestimonial-text">"Had a complex commercial job that required
+                                            precise waterproofing. The Caulking Guy team delivered beyond expectations.
+                                            Their expertise in commercial applications is unmatched in Sydney."</p>
+                                        <div class="thecguytestimonial-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="thecguytestimonial-author">
+                                            <div class="thecguytestimonial-avatar">
+                                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
+                                                    alt="David Rodriguez">
+                                            </div>
+                                            <div class="thecguytestimonial-info">
+                                                <h5>David Rodriguez</h5>
+                                                <p>Building Manager, CBD</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 4 -->
+                            <div class="carousel-item">
+                                <div class="thecguytestimonial-card">
+                                    <div class="thecguytestimonial-quote-icon">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <div class="thecguytestimonial-content">
+                                        <p class="thecguytestimonial-text">"Quick response, fair pricing, and excellent
+                                            results. They fixed our shower leak issue that three other contractors
+                                            couldn't solve. Now we have a completely waterproof bathroom!"</p>
+                                        <div class="thecguytestimonial-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="thecguytestimonial-author">
+                                            <div class="thecguytestimonial-avatar">
+                                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face"
+                                                    alt="Emma Thompson">
+                                            </div>
+                                            <div class="thecguytestimonial-info">
+                                                <h5>Emma Thompson</h5>
+                                                <p>Homeowner, Surry Hills</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 5 -->
+                            <div class="carousel-item">
+                                <div class="thecguytestimonial-card">
+                                    <div class="thecguytestimonial-quote-icon">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <div class="thecguytestimonial-content">
+                                        <p class="thecguytestimonial-text">"Outstanding service from start to finish.
+                                            They provided a detailed quote, stuck to the timeline, and the quality of
+                                            work is exceptional. Will definitely use them again for future projects."
+                                        </p>
+                                        <div class="thecguytestimonial-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="thecguytestimonial-author">
+                                            <div class="thecguytestimonial-avatar">
+                                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face"
+                                                    alt="James Anderson">
+                                            </div>
+                                            <div class="thecguytestimonial-info">
+                                                <h5>James Anderson</h5>
+                                                <p>Renovation Contractor, Paddington</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="testimonial-back">
-                            <h5>Project Details</h5>
-                            <p><strong>Service:</strong> Bathroom Caulking</p>
-                            <p><strong>Location:</strong> Double Bay</p>
-                            <p><strong>Duration:</strong> 1 Day</p>
-                            <p><strong>Warranty:</strong> 5 Years</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="testimonial-card-inner">
-                        <div class="testimonial-front">
-                            <div class="quote-icon">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <p>"Professional service from start to finish. Quick response, fair pricing, and outstanding
-                                quality. Highly recommended!"</p>
-                            <div class="testimonial-avatar">
-                                <img src="https://via.placeholder.com/80x80/06b6d4/white?text=RT" alt="Robert Thompson">
-                            </div>
-                            <h5>Robert Thompson</h5>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-back">
-                            <h5>Project Details</h5>
-                            <p><strong>Service:</strong> Kitchen Sealing</p>
-                            <p><strong>Location:</strong> Bondi Beach</p>
-                            <p><strong>Duration:</strong> Half Day</p>
-                            <p><strong>Warranty:</strong> 5 Years</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="testimonial-card-inner">
-                        <div class="testimonial-front">
-                            <div class="quote-icon">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <p>"The Caulking Guy saved our heritage home! Expert exterior sealing that perfectly matches
-                                the original aesthetics."</p>
-                            <div class="testimonial-avatar">
-                                <img src="https://via.placeholder.com/80x80/f59e0b/white?text=AL" alt="Amanda Lee">
-                            </div>
-                            <h5>Amanda Lee</h5>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-back">
-                            <h5>Project Details</h5>
-                            <p><strong>Service:</strong> Exterior Caulking</p>
-                            <p><strong>Location:</strong> Paddington</p>
-                            <p><strong>Duration:</strong> 2 Days</p>
-                            <p><strong>Warranty:</strong> 5 Years</p>
-                        </div>
+
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev thecguytestimonial-control-prev" type="button"
+                            data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <i class="fas fa-chevron-left"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next thecguytestimonial-control-next" type="button"
+                            data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- FAQ Section -->
     <section class="faq-section">
         <div class="container">
