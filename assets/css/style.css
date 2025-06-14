@@ -1606,3 +1606,31 @@ body {
         animation: none;
     }
 }
+/* Scroll to Top Button */
+ .scroll-top {
+     position: fixed;
+     bottom: 2rem;
+     right: 2rem;
+     width: 50px;
+     height: 50px;
+     background: var(--gradient-primary);
+     border-radius: 50%;
+     border: none;
+     color: white;
+     font-size: 1.2rem;
+     cursor: pointer;
+     opacity: 0;
+     visibility: hidden;
+     transition: all 0.3s ease;
+     z-index: 1000;
+ }
+
+ .scroll-top.visible {
+     opacity: 1;
+     visibility: visible;
+ }
+
+ .scroll-top:hover {
+     transform: translateY(-5px);
+     box-shadow: var(--shadow-large);
+ }
