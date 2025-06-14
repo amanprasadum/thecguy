@@ -861,51 +861,49 @@ body {
 .step-number {
     font-size: 2.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--primary-color);
 }
 
 .step-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    background: var(--primary-color);
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+    color: var(--text-white);
+    box-shadow: var(--shadow-medium);
 }
 
 .warranty-card .step-icon {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--text-white);
+    color: var(--secondary-color);
 }
 
 .card-content h4 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #1e293b;
+    color: var(--text-primary);
 }
 
 .card-content p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #64748b;
+    color: var(--text-secondary);
     margin-bottom: 1.5rem;
 }
 
 .card-footer {
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid var(--border-color);
     padding-top: 1rem;
 }
 
 .duration {
     display: inline-block;
-    background: #f1f5f9;
-    color: #475569;
+    background: var(--bg-light);
+    color: var(--text-secondary);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.875rem;
@@ -913,15 +911,15 @@ body {
 }
 
 .duration.guarantee {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+    background: var(--text-white);
+    color: var(--secondary-color);
 }
 
 .process-cta {
     text-align: center;
     margin-top: 5rem;
     padding: 3rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--card-bg-color);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -931,17 +929,19 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: var(--text-white);
 }
 
 .process-cta p {
     font-size: 1.2rem;
     opacity: 0.9;
     margin-bottom: 2rem;
+    color: var(--text-white);
 }
 
 .cta-button {
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-    color: white;
+    background: var(--accent-color);
+    color: var(--text-white);
     border: none;
     padding: 1rem 2.5rem;
     border-radius: 50px;
@@ -949,12 +949,13 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+    box-shadow: var(--shadow-medium);
 }
 
 .cta-button:hover {
+    background: var(--primary-dark);
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
+    box-shadow: var(--shadow-large);
 }
 
 /* Responsive Design */
