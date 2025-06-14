@@ -791,7 +791,7 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: var(--text-white);
+    color: var(--bg-primary);
 }
 
 .section-subtitle {
