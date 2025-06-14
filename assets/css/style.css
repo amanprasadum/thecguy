@@ -723,7 +723,7 @@ body {
 
 .floating-shape {
     position: absolute;
-    background: rgba(59, 130, 246, 0.1);
+    background: rgba(59, 130, 246, 0.5);
     border-radius: 50%;
     animation: float 20s ease-in-out infinite;
 }
