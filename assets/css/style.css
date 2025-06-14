@@ -456,7 +456,8 @@ body {
 /* About Section */
 .about-section {
     padding: 6rem 0;
-    background: var(--bg-light);
+    /* background: var(--bg-light); */
+    background: var(--card-bg-color);
 }
 
 .about-hero {
