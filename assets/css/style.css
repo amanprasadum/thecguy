@@ -110,7 +110,7 @@ body {
     background: rgba(30, 64, 175, 0.1);
     transform: translateY(-2px);
 } */
- /* Enhanced Navbar Styles */
+ /*  ------------------mega menu start -------------- */
 .navbar {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
@@ -752,6 +752,8 @@ body {
     transform: scale(1.1) rotate(180deg);
     box-shadow: var(--shadow-medium);
 }
+ /*  ------------------mega menu end -------------- */
+
 
 /* Hero Section - Fixed overlay and text visibility */
 .hero-section {
