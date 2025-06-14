@@ -1297,6 +1297,7 @@ body {
 }
 
 .thecguytestimonial-indicators button.active {
+    display: none;
     background: var(--primary-color);
     transform: scale(1.2);
 }
