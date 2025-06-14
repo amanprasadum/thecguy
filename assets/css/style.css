@@ -793,6 +793,12 @@ body {
     margin-bottom: 1rem;
     color: var(--bg-primary);
 }
+.section-title-light {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
 
 .section-subtitle {
     font-size: 1.3rem;
