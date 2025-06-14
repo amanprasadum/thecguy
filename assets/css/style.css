@@ -1404,6 +1404,11 @@ body {
     color: var(--text-secondary);
     margin-bottom: 3rem;
 }
+.section-subtitle-light {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
 
 .contact-container {
     display: grid;
