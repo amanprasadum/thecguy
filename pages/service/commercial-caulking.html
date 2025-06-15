@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,45 +10,187 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/service-cards.css">
 </head>
+
 <body>
     <div class="custom-cursor"></div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-tools"></i> The Caulking Guy
+            <a class="navbar-brand" href="../../index.html">
+                <div class="brand-content">
+                    <i class="fas fa-tools brand-icon"></i>
+                    <span class="brand-text">The Caulking Guys</span>
+                </div>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#home">Home</a>
+                        <a class="nav-link active" href="../../index.html">
+                            <i class="fas fa-home nav-icon"></i>
+                            <span>Home</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="../../about.html">
+                            <i class="fas fa-user nav-icon"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="../../service.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-cogs nav-icon"></i>
+                            <span>Services</span>
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <!-- Commercial Services Column -->
+                                        <div class="col-lg-4 col-md-6 mb-4">
+                                            <div class="service-card">
+                                                <div class="service-icon">
+                                                    <i class="fas fa-building"></i>
+                                                </div>
+                                                <h5 class="service-title">Commercial Caulking</h5>
+                                                <p class="service-description">Professional sealing solutions for office
+                                                    buildings, retail spaces, and commercial properties.</p>
+                                                <a href="./commercial-caulking.html" class="service-link">Learn More <i
+                                                        class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Residential Services Column -->
+                                        <div class="col-lg-4 col-md-6 mb-4">
+                                            <div class="service-card">
+                                                <div class="service-icon">
+                                                    <i class="fas fa-home"></i>
+                                                </div>
+                                                <h5 class="service-title">Residential Caulking</h5>
+                                                <p class="service-description">Expert bathroom, kitchen, and home
+                                                    sealing services for residential properties.</p>
+                                                <a href="./residential-caulking.html" class="service-link">Learn More <i
+                                                        class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Fire Safety Column -->
+                                        <div class="col-lg-4 col-md-6 mb-4">
+                                            <div class="service-card">
+                                                <div class="service-icon">
+                                                    <i class="fas fa-fire-extinguisher"></i>
+                                                </div>
+                                                <h5 class="service-title">Fire Caulking</h5>
+                                                <p class="service-description">Specialized fire-rated sealing solutions
+                                                    for enhanced safety and building compliance.</p>
+                                                <a href="./fire-caulking.html" class="service-link">Learn More <i
+                                                        class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- External Sealing Column -->
+                                        <div class="col-lg-4 col-md-6 mb-4">
+                                            <div class="service-card">
+                                                <div class="service-icon">
+                                                    <i class="fas fa-shield-alt"></i>
+                                                </div>
+                                                <h5 class="service-title">External Sealing</h5>
+                                                <p class="service-description">Weather-resistant exterior sealing and
+                                                    weatherproofing for lasting protection.</p>
+                                                <a href="./external-sealing.html" class="service-link">Learn More <i
+                                                        class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Internal Sealing Column -->
+                                        <div class="col-lg-4 col-md-6 mb-4">
+                                            <div class="service-card">
+                                                <div class="service-icon">
+                                                    <i class="fas fa-tools"></i>
+                                                </div>
+                                                <h5 class="service-title">Internal Sealing</h5>
+                                                <p class="service-description">Interior sealing solutions for optimal
+                                                    comfort and energy efficiency indoors.</p>
+                                                <a href="./internal-sealing.html" class="service-link">Learn More <i
+                                                        class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Remedial Services Column -->
+                                        <div class="col-lg-4 col-md-6 mb-4">
+                                            <div class="service-card">
+                                                <div class="service-icon">
+                                                    <i class="fas fa-wrench"></i>
+                                                </div>
+                                                <h5 class="service-title">Remedial Caulking</h5>
+                                                <p class="service-description">Expert repair and restoration of existing
+                                                    sealing systems and damaged caulking.</p>
+                                                <a href="./remedial-caulking.html" class="service-link">Learn More <i
+                                                        class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- CTA Section -->
+                                    <div class="row mega-menu-footer">
+                                        <div class="col-lg-8 col-md-7">
+                                            <div class="cta-content">
+                                                <h5><i class="fas fa-phone-alt"></i> Need Help Choosing the Right
+                                                    Service?</h5>
+                                                <p>Our experienced team is ready to assess your needs and provide expert
+                                                    recommendations for your sealing project.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-5 text-lg-end text-center">
+                                            <div class="contact-info">
+                                                <div class="phone-number">0434 797 473</div>
+                                                <a href="tel:0434797473" class="btn mega-cta-btn text-light">
+                                                    <i class="fas fa-phone-alt"></i>
+                                                    Get Free Quote
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html#services">Services</a>
+                        <a class="nav-link" href="#portfolio">
+                            <i class="fas fa-briefcase nav-icon"></i>
+                            <span>Portfolio</span>
+                        </a>
                     </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#process">
+                            <i class="fas fa-tasks nav-icon"></i>
+                            <span>Process</span>
+                        </a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">
+                            <i class="fas fa-star nav-icon"></i>
+                            <span>Reviews</span>
+                        </a>
+                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#process">Process</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#testimonials">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link contact-btn" href="../../contact.html">
+                            <i class="fas fa-phone nav-icon"></i>
+                            <span>Contact</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -56,7 +199,9 @@
 
     <!-- Hero Section -->
     <section id="services" class="thecguyservices-hero hero-section">
-        <div class="hero-video" style="background-image: url('https://thecaulkingguy.com.au/wp-content/uploads/2024/06/service08.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="hero-video"
+            style="background-image: url('https://thecaulkingguy.com.au/wp-content/uploads/2024/06/service08.jpg'); background-size: cover; background-position: center;">
+        </div>
         <div class="hero-overlay"></div>
         <div class="hero-content" data-aos="fade-up">
             <h1 class="hero-title">Professional Commercial Caulking Solutions in Sydney</h1>
@@ -71,7 +216,11 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center ">
                     <h2 class="section-title" data-aos="fade-up">About Commercial Caulking</h2>
-                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">At The Caulking Guy, we provide quality commercial caulking services in Sydney that are designed to meet the highest standards of quality and durability. Our team of skilled professionals specializes in providing quality commercial caulking solutions that ensure that your building projects are sealed to perfection.</p>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">At The Caulking Guy, we provide
+                        quality commercial caulking services in Sydney that are designed to meet the highest standards
+                        of quality and durability. Our team of skilled professionals specializes in providing quality
+                        commercial caulking solutions that ensure that your building projects are sealed to perfection.
+                    </p>
                 </div>
             </div>
         </div>
@@ -83,7 +232,9 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center mb-5">
                     <h2 class="section-title" data-aos="fade-up">What Does Our Commercial Caulking Include?</h2>
-                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Our commercial caulking services cover a wide range of applications, ensuring that every joint, gap, and seam in your commercial property is properly sealed.</p>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Our commercial caulking services
+                        cover a wide range of applications, ensuring that every joint, gap, and seam in your commercial
+                        property is properly sealed.</p>
                 </div>
             </div>
             <div class="row g-4">
@@ -93,7 +244,8 @@
                             <i class="fas fa-arrows-alt-h"></i>
                         </div>
                         <h4>Expansion Joint Caulking</h4>
-                        <p>We expertly seal expansion joints to accommodate structural movements, preventing cracks and water infiltration that could compromise the integrity of your building.</p>
+                        <p>We expertly seal expansion joints to accommodate structural movements, preventing cracks and
+                            water infiltration that could compromise the integrity of your building.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
@@ -102,7 +254,8 @@
                             <i class="fas fa-window-maximize"></i>
                         </div>
                         <h4>Glazing Caulking</h4>
-                        <p>Our glazing caulking services ensure a tight seal around windows and glass panels, providing excellent insulation and preventing air and water leaks.</p>
+                        <p>Our glazing caulking services ensure a tight seal around windows and glass panels, providing
+                            excellent insulation and preventing air and water leaks.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
@@ -111,7 +264,8 @@
                             <i class="fas fa-cubes"></i>
                         </div>
                         <h4>Precast Panel Caulking</h4>
-                        <p>We apply durable caulking to precast concrete panels, ensuring they are securely bonded and protected against environmental factors.</p>
+                        <p>We apply durable caulking to precast concrete panels, ensuring they are securely bonded and
+                            protected against environmental factors.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
@@ -120,7 +274,8 @@
                             <i class="fas fa-ruler-combined"></i>
                         </div>
                         <h4>Control Joint Caulking</h4>
-                        <p>Control joints are essential for allowing concrete to expand and contract. Our caulking ensures these joints are sealed, preventing moisture entry and damage.</p>
+                        <p>Control joints are essential for allowing concrete to expand and contract. Our caulking
+                            ensures these joints are sealed, preventing moisture entry and damage.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
@@ -129,7 +284,8 @@
                             <i class="fas fa-th"></i>
                         </div>
                         <h4>Floor and Tile Joint Caulking</h4>
-                        <p>We seal joints in floors and tiles to prevent dirt, water, and other contaminants from causing damage, ensuring a clean and safe environment.</p>
+                        <p>We seal joints in floors and tiles to prevent dirt, water, and other contaminants from
+                            causing damage, ensuring a clean and safe environment.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
@@ -138,13 +294,15 @@
                             <i class="fas fa-building"></i>
                         </div>
                         <h4>Facade Caulking</h4>
-                        <p>Our facade caulking services protect the exterior of your building from the elements, enhancing its appearance and longevity.</p>
+                        <p>Our facade caulking services protect the exterior of your building from the elements,
+                            enhancing its appearance and longevity.</p>
                     </div>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="700">
-                    <img src="https://thecaulkingguy.com.au/wp-content/uploads/2024/06/The-Caulking-Guy-Silicone-Caulking-Service-1024x646.jpg" alt="Commercial Caulking" class="img-fluid rounded-3" style="max-width: 100%; height: auto;">
+                    <img src="https://thecaulkingguy.com.au/wp-content/uploads/2024/06/The-Caulking-Guy-Silicone-Caulking-Service-1024x646.jpg"
+                        alt="Commercial Caulking" class="img-fluid rounded-3" style="max-width: 100%; height: auto;">
                 </div>
             </div>
         </div>
@@ -155,8 +313,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="section-title" data-aos="fade-up">Why Choose The Caulking Guy Silicone Caulking Service?</h2>
-                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Our commitment to excellence makes us the preferred choice for commercial caulking in Sydney.</p>
+                    <h2 class="section-title" data-aos="fade-up">Why Choose The Caulking Guy Silicone Caulking Service?
+                    </h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Our commitment to excellence
+                        makes us the preferred choice for commercial caulking in Sydney.</p>
                 </div>
             </div>
             <div class="row g-4">
@@ -166,7 +326,9 @@
                             <i class="fas fa-tools"></i>
                         </div>
                         <h4>Expertise and Experience Commercial Caulking Team</h4>
-                        <p>With years of experience in the industry, The Caulking Guy has built a reputation for delivering top-notch caulking services. Our team is trained to handle a variety of commercial projects, ensuring precision and reliability in every job.</p>
+                        <p>With years of experience in the industry, The Caulking Guy has built a reputation for
+                            delivering top-notch caulking services. Our team is trained to handle a variety of
+                            commercial projects, ensuring precision and reliability in every job.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
@@ -175,7 +337,9 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <h4>Quality Materials for Commercial Caulking Solution</h4>
-                        <p>We use only the highest quality silicone caulking materials that are designed to withstand the harsh Australian climate. Our products provide long-lasting seals that maintain their flexibility and effectiveness over time.</p>
+                        <p>We use only the highest quality silicone caulking materials that are designed to withstand
+                            the harsh Australian climate. Our products provide long-lasting seals that maintain their
+                            flexibility and effectiveness over time.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
@@ -184,7 +348,10 @@
                             <i class="fas fa-search"></i>
                         </div>
                         <h4>Proper Attention to Your Commercial Caulking Issues</h4>
-                        <p>Our meticulous approach ensures that every joint and seam is thoroughly sealed, providing optimal protection against water, air, and contaminants. Our team of professional commercials caulking experts pay attention to the smallest of details to ensure a flawless finish.</p>
+                        <p>Our meticulous approach ensures that every joint and seam is thoroughly sealed, providing
+                            optimal protection against water, air, and contaminants. Our team of professional
+                            commercials caulking experts pay attention to the smallest of details to ensure a flawless
+                            finish.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
@@ -193,7 +360,9 @@
                             <i class="fas fa-cogs"></i>
                         </div>
                         <h4>Provide Customized Commercial Caulking Solutions</h4>
-                        <p>We understand that each project is unique. Our commercial caulking expert team works closely with clients to provide tailored caulking solutions that meet specific requirements and budgets.</p>
+                        <p>We understand that each project is unique. Our commercial caulking expert team works closely
+                            with clients to provide tailored caulking solutions that meet specific requirements and
+                            budgets.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
@@ -202,7 +371,9 @@
                             <i class="fas fa-clock"></i>
                         </div>
                         <h4>Timely and Efficient Commercial Caulking Service</h4>
-                        <p>We pride ourselves on completing projects on time and with minimal disruption to your operations. Our efficient work processes ensure that we deliver high-quality results promptly.</p>
+                        <p>We pride ourselves on completing projects on time and with minimal disruption to your
+                            operations. Our efficient work processes ensure that we deliver high-quality results
+                            promptly.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
@@ -211,13 +382,17 @@
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <h4>Comprehensive Warranty on Commercial Caulking</h4>
-                        <p>For your peace of mind, we offer a comprehensive warranty on all our caulking services. We stand by the quality of our work and are committed to ensuring your complete satisfaction.</p>
+                        <p>For your peace of mind, we offer a comprehensive warranty on all our caulking services. We
+                            stand by the quality of our work and are committed to ensuring your complete satisfaction.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="700">
-                    <img src="https://thecaulkingguy.com.au/wp-content/uploads/2024/06/Professional-Commercial-Caulking-Solutions-in-Sydney.jpg" alt="Commercial Caulking Solutions" class="img-fluid rounded-3" style="max-width: 100%; height: auto;">
+                    <img src="https://thecaulkingguy.com.au/wp-content/uploads/2024/06/Professional-Commercial-Caulking-Solutions-in-Sydney.jpg"
+                        alt="Commercial Caulking Solutions" class="img-fluid rounded-3"
+                        style="max-width: 100%; height: auto;">
                 </div>
             </div>
         </div>
@@ -229,7 +404,8 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center mb-5">
                     <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
-                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Contact us today to discuss our specialist commercial caulking team for your project and receive a free quote.</p>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Contact us today to discuss our
+                        specialist commercial caulking team for your project and receive a free quote.</p>
                 </div>
             </div>
             <div class="contact-container">
@@ -265,7 +441,8 @@
                     <div class="social-icons">
                         <a href="https://facebook.com/caulkingguy" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://instagram.com/caulkingguy" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com/company/caulkingguy" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://linkedin.com/company/caulkingguy" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                     <div class="map-placeholder" data-aos="fade-up" data-aos-delay="200"></div>
                 </div>
@@ -300,7 +477,8 @@
                             <textarea id="message" rows="5" placeholder=" " required></textarea>
                             <label for="message">Project Details</label>
                         </div>
-                        <button type="submit" class="btn-submit">Submit Request <span class="loading" style="display: none;"></span></button>
+                        <button type="submit" class="btn-submit">Submit Request <span class="loading"
+                                style="display: none;"></span></button>
                     </form>
                 </div>
             </div>
@@ -314,7 +492,8 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-section">
                         <h5>About The Caulking Guy</h5>
-                        <p>Sydney's premier caulking specialists, providing high-quality sealing and waterproofing solutions for homes and businesses since 2008.</p>
+                        <p>Sydney's premier caulking specialists, providing high-quality sealing and waterproofing
+                            solutions for homes and businesses since 2008.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -420,4 +599,5 @@
         animatedElements.forEach(element => observer.observe(element));
     </script>
 </body>
+
 </html>
