@@ -110,7 +110,7 @@ body {
     background: rgba(30, 64, 175, 0.1);
     transform: translateY(-2px);
 } */
- /*  ------------------mega menu start -------------- */
+/*  ------------------mega menu start -------------- */
 .navbar {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
@@ -562,38 +562,38 @@ body {
         overflow-y: auto;
         padding: 0;
     }
-    
+
     .mega-menu-content {
         padding: 1rem 0;
         min-height: auto;
     }
-    
+
     .mega-menu .container {
         padding: 0;
     }
-    
+
     .mega-menu-section {
         margin-bottom: 1.5rem;
         background: rgba(248, 250, 252, 0.9);
     }
-    
+
     .mega-menu-footer {
         margin-top: 1rem;
         padding: 1rem;
         text-align: center;
     }
-    
+
     .mega-cta-btn {
         width: 100%;
         justify-content: center;
         margin-top: 1rem;
     }
-    
+
     .cta-content {
         text-align: center;
         margin-bottom: 1rem;
     }
-    
+
     /* Mobile scrollbar */
     .mega-menu::-webkit-scrollbar {
         width: 4px;
@@ -617,6 +617,7 @@ body {
 .mega-menu.scrolled::before {
     opacity: 1;
 }
+
 .custom-dropdown {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
@@ -664,8 +665,15 @@ body {
 
 /* Animations */
 @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 @keyframes slideInDown {
@@ -673,6 +681,7 @@ body {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -695,27 +704,27 @@ body {
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         border: 1px solid rgba(226, 232, 240, 0.3);
     }
-    
+
     [data-theme="dark"] .navbar-collapse {
         background: rgba(31, 41, 55, 0.98);
         border: 1px solid rgba(75, 85, 99, 0.3);
     }
-    
+
     .navbar-nav {
         gap: 0.5rem;
     }
-    
+
     .nav-link {
         padding: 1rem 1.5rem !important;
         margin: 0.25rem 0;
         justify-content: flex-start;
     }
-    
+
     .contact-btn {
         margin-left: 0;
         margin-top: 0.5rem;
     }
-    
+
     .custom-dropdown {
         position: static !important;
         transform: none !important;
@@ -752,7 +761,8 @@ body {
     transform: scale(1.1) rotate(180deg);
     box-shadow: var(--shadow-medium);
 }
- /*  ------------------mega menu end -------------- */
+
+/*  ------------------mega menu end -------------- */
 
 
 /* Hero Section - Fixed overlay and text visibility */
@@ -1182,8 +1192,8 @@ body {
 
 /* Portfolio Section */
 .portfolio-section {
-    padding: 6rem 0;
-    background: var(--bg-white);
+    padding: 3rem 0;
+    background: #f1ebeb;
 }
 
 .portfolio-filters {
@@ -1666,7 +1676,7 @@ body {
 .thecguytestimonial-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--bg-primary);
     margin-bottom: 1rem;
     position: relative;
 }
@@ -1973,6 +1983,7 @@ body {
     background: var(--bg-white);
     color: var(--text-primary);
 }
+
 /*  ================================  FAQ Section End ========================================== */
 
 /*  ================================ Contact Section Start  ================================*/
@@ -2014,8 +2025,10 @@ body {
 
 /* Contact Section */
 .contact-section {
-    padding: 6rem 0;
-    background: var(--bg-white);
+    /* padding: 6rem 0;
+    background: var(--bg-white); */
+    padding: 3rem 0;
+    background: #dae3ff;
 }
 
 /* .section-title {
@@ -2030,6 +2043,7 @@ body {
     color: var(--text-secondary);
     margin-bottom: 3rem;
 }
+
 .section-subtitle-light {
     font-size: 1.1rem;
     color: #ffffff;
@@ -2040,7 +2054,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 /* Contact Info */
@@ -2351,7 +2365,8 @@ body {
         padding: 1.5rem;
     }
 }
- /* ================================ Contact Secton End  ================================ */
+
+/* ================================ Contact Secton End  ================================ */
 /* Footer */
 .footer {
     background: var(--bg-dark);
@@ -2771,21 +2786,22 @@ body {
         animation: none;
     }
 }
- /* Scroll to Top Button */
- .scroll-top {
-     position: fixed;
-     bottom: 2rem;
-     right: 2rem;
-     width: 50px;
-     height: 50px;
-     background: var(--primary-color);
-     border-radius: 50%;
-     border: none;
-     color: white;
-     font-size: 1.2rem;
-     cursor: pointer;
-     opacity: 0;
-     visibility: hidden;
-     transition: all 0.3s ease;
-     z-index: 1000;
- }
+
+/* Scroll to Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
