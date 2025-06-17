@@ -2447,12 +2447,14 @@ body {
     color: #ecf0f1;
     padding: 60px 0 0;
     margin-top: auto;
+    width: 100%;
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
 }
 
 .footer-content {
@@ -2460,6 +2462,11 @@ body {
     grid-template-columns: 2fr 1fr 1fr 1.5fr;
     gap: 40px;
     margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.footer-section {
+    width: 100%;
 }
 
 .footer-section h3.footer-title {
@@ -2468,6 +2475,7 @@ body {
     font-weight: 700;
     margin-bottom: 20px;
     letter-spacing: -0.5px;
+    line-height: 1.2;
 }
 
 .footer-section h4.footer-heading {
@@ -2534,16 +2542,19 @@ body {
 
 .contact-info .contact-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 15px;
     color: #bdc3c7;
+    line-height: 1.6;
 }
 
 .contact-item i {
-    width: 20px;
+    width: 18px;
     color: #3498db;
     margin-right: 12px;
     font-size: 14px;
+    margin-top: 2px;
+    flex-shrink: 0;
 }
 
 .social-links {
@@ -2612,33 +2623,62 @@ body {
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
+
+    .footer-container {
+        padding: 0 15px;
+    }
 }
 
 @media (max-width: 768px) {
     .footer {
         padding: 40px 0 0;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 30px;
+        text-align: left;
+    }
+
+    .footer-section h4.footer-heading:after {
+        left: 0;
+        transform: none;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+
+    .footer-container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section h3.footer-title {
+        font-size: 24px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-content {
         text-align: center;
     }
-    
+
     .footer-section h4.footer-heading:after {
         left: 50%;
         transform: translateX(-50%);
     }
-    
-    .footer-bottom-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
 }
+
 /* ---------------------------------    Footer end --------------------------- */
 
 /* Back to Top Button */
