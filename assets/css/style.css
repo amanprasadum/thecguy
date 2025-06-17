@@ -2442,7 +2442,8 @@ body {
 
 
 /* Footer CSS */
-.footer {
+/* Footer CSS */
+.thecguyfooter {
     background: #2c3e50;
     color: #ecf0f1;
     padding: 50px 0 0;
@@ -2450,13 +2451,13 @@ body {
     clear: both;
 }
 
-.footer-container {
+.thecguyfooter-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-.footer-content {
+.thecguyfooter-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -2464,18 +2465,18 @@ body {
     margin-bottom: 40px;
 }
 
-.footer-section {
+.thecguyfooter-section {
     flex: 1;
     min-width: 250px;
     margin-bottom: 20px;
 }
 
-.footer-section.company-info {
+.thecguyfooter-section.thecguyfooter-company-info {
     flex: 2;
     max-width: 350px;
 }
 
-.footer-section h3.footer-title {
+.thecguyfooter-section h3.thecguyfooter-title {
     color: #3498db;
     font-size: 26px;
     font-weight: 700;
@@ -2483,7 +2484,7 @@ body {
     line-height: 1.2;
 }
 
-.footer-section h4.footer-heading {
+.thecguyfooter-section h4.thecguyfooter-heading {
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
@@ -2492,7 +2493,7 @@ body {
     padding-bottom: 8px;
 }
 
-.footer-section h4.footer-heading:after {
+.thecguyfooter-section h4.thecguyfooter-heading:after {
     content: '';
     position: absolute;
     left: 0;
@@ -2502,65 +2503,69 @@ body {
     background: #3498db;
 }
 
-.footer-description {
+.thecguyfooter-description {
     line-height: 1.7;
     margin-bottom: 20px;
-    color: #bdc3c7;
+    color: #ffffff;
     font-size: 15px;
 }
 
-.footer-links {
+.thecguyfooter-links {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.footer-links li {
+.thecguyfooter-links li {
     margin-bottom: 8px;
 }
 
-.footer-links a {
-    color: #bdc3c7;
+.thecguyfooter-links a {
+    color: #ffffff;
     text-decoration: none;
     transition: all 0.3s ease;
     font-size: 15px;
     line-height: 1.6;
 }
 
-.footer-links a:hover {
+.thecguyfooter-links a:hover {
     color: #3498db;
     padding-left: 5px;
 }
 
-.contact-info {
+.thecguyfooter-contact-info {
     margin: 0;
     padding: 0;
+    background: none;
 }
 
-.contact-item {
-    color: #bdc3c7;
+.thecguyfooter-contact-item {
+    color: #ffffff;
     margin: 0 0 12px 0;
     padding: 0;
     font-size: 15px;
     line-height: 1.6;
     display: block;
+    background: none;
+    border: none;
 }
 
-.contact-item i {
-    color: #3498db;
+.thecguyfooter-contact-item i {
+    color: #ffffff;
     margin-right: 10px;
     width: 16px;
     text-align: left;
     font-size: 14px;
+    background: none;
 }
 
-.social-links {
+.thecguyfooter-social-links {
     display: flex;
     gap: 10px;
     margin-top: 15px;
 }
 
-.social-link {
+.thecguyfooter-social-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -2574,18 +2579,18 @@ body {
     font-size: 14px;
 }
 
-.social-link:hover {
+.thecguyfooter-social-link:hover {
     background: #3498db;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
 }
 
-.footer-bottom {
+.thecguyfooter-bottom {
     border-top: 1px solid #34495e;
     padding: 20px 0;
 }
 
-.footer-bottom-content {
+.thecguyfooter-bottom-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2593,68 +2598,68 @@ body {
     gap: 15px;
 }
 
-.footer-bottom p {
+.thecguyfooter-bottom p {
     color: #95a5a6;
     margin: 0;
     font-size: 14px;
 }
 
-.footer-bottom-links {
+.thecguyfooter-bottom-links {
     display: flex;
     gap: 20px;
 }
 
-.footer-bottom-links a {
+.thecguyfooter-bottom-links a {
     color: #95a5a6;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s ease;
 }
 
-.footer-bottom-links a:hover {
+.thecguyfooter-bottom-links a:hover {
     color: #3498db;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .footer {
+    .thecguyfooter {
         padding: 40px 0 0;
     }
     
-    .footer-content {
+    .thecguyfooter-content {
         flex-direction: column;
         gap: 25px;
     }
     
-    .footer-section {
+    .thecguyfooter-section {
         min-width: 100%;
     }
     
-    .footer-section.company-info {
+    .thecguyfooter-section.thecguyfooter-company-info {
         max-width: 100%;
     }
     
-    .footer-bottom-content {
+    .thecguyfooter-bottom-content {
         flex-direction: column;
         text-align: center;
         gap: 10px;
     }
     
-    .footer-bottom-links {
+    .thecguyfooter-bottom-links {
         gap: 15px;
     }
 }
 
 @media (max-width: 480px) {
-    .footer-container {
+    .thecguyfooter-container {
         padding: 0 10px;
     }
     
-    .footer-section h3.footer-title {
+    .thecguyfooter-section h3.thecguyfooter-title {
         font-size: 22px;
     }
     
-    .footer-bottom-links {
+    .thecguyfooter-bottom-links {
         flex-direction: column;
         gap: 8px;
     }
