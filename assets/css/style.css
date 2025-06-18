@@ -1718,6 +1718,14 @@ body {
     background: #dae3ff;
 }
 
+.blue-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--bg-primary);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
 /* .section-title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -2313,26 +2321,26 @@ body {
     .thecguyfooter {
         padding: 40px 0 0;
     }
-    
+
     .thecguyfooter-content {
         flex-direction: column;
         gap: 25px;
     }
-    
+
     .thecguyfooter-section {
         min-width: 100%;
     }
-    
+
     .thecguyfooter-section.thecguyfooter-company-info {
         max-width: 100%;
     }
-    
+
     .thecguyfooter-bottom-content {
         flex-direction: column;
         text-align: center;
         gap: 10px;
     }
-    
+
     .thecguyfooter-bottom-links {
         gap: 15px;
     }
@@ -2342,16 +2350,17 @@ body {
     .thecguyfooter-container {
         padding: 0 10px;
     }
-    
+
     .thecguyfooter-section h3.thecguyfooter-title {
         font-size: 22px;
     }
-    
+
     .thecguyfooter-bottom-links {
         flex-direction: column;
         gap: 8px;
     }
 }
+
 /* ---------------------------------    Footer end --------------------------- */
 
 /* Back to Top Button */
