@@ -118,7 +118,7 @@ body {
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(226, 232, 240, 0.3);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.3s ease;
     padding: 0.8rem 0;
     z-index: 1000;
 }
@@ -139,7 +139,7 @@ body {
     font-weight: 700;
     color: var(--primary-color) !important;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .brand-content {
@@ -154,7 +154,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: pulse 2s infinite;
+    animation: subtle-pulse 3s ease-in-out infinite;
 }
 
 .brand-text {
@@ -166,11 +166,7 @@ body {
 }
 
 .navbar-brand:hover {
-    transform: scale(1.05);
-}
-
-.navbar-brand:hover .brand-icon {
-    animation-duration: 0.5s;
+    transform: scale(1.02);
 }
 
 /* Custom Mobile Toggle */
@@ -210,7 +206,7 @@ body {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Enhanced Navigation Links */
+/* Enhanced Navigation Links - Lighter Hover Effects */
 .navbar-nav {
     gap: 0.5rem;
 }
@@ -220,7 +216,7 @@ body {
     color: var(--text-primary) !important;
     padding: 0.75rem 1.25rem !important;
     border-radius: 50px;
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.2s ease;
     position: relative;
     display: flex;
     align-items: center;
@@ -231,26 +227,26 @@ body {
 
 .nav-icon {
     font-size: 0.9rem;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     opacity: 0.8;
 }
 
+/* Lighter hover effect */
 .nav-link:hover {
     color: var(--primary-color) !important;
-    background: linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(59, 130, 246, 0.05));
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.15);
+    background: rgba(30, 64, 175, 0.05);
+    transform: translateY(-1px);
 }
 
 .nav-link:hover .nav-icon {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .nav-link.active {
     color: var(--primary-color) !important;
-    background: linear-gradient(135deg, rgba(30, 64, 175, 0.15), rgba(59, 130, 246, 0.08));
-    box-shadow: 0 4px 15px rgba(30, 64, 175, 0.2);
+    background: rgba(30, 64, 175, 0.1);
+    box-shadow: 0 2px 8px rgba(30, 64, 175, 0.15);
 }
 
 .nav-link.active .nav-icon {
@@ -269,8 +265,8 @@ body {
 .contact-btn:hover {
     background: linear-gradient(135deg, var(--primary-dark), var(--primary-color)) !important;
     color: white !important;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(30, 64, 175, 0.4);
 }
 
 .contact-btn .nav-icon {
@@ -278,7 +274,7 @@ body {
     opacity: 1;
 }
 
-/* Mega Menu Styles */
+/* Mega Menu Styles - Faster Transitions */
 .mega-dropdown {
     position: static;
 }
@@ -297,8 +293,8 @@ body {
     margin-top: 0;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-20px);
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
     z-index: 1000;
     max-height: calc(100vh - var(--navbar-height, 80px) - 40px);
     overflow-y: auto;
@@ -340,31 +336,33 @@ body {
     transform: translateY(0);
 }
 
+/* Lighter section effects */
 .mega-menu-section {
     padding: 1.5rem;
     border-radius: 12px;
-    background: rgba(248, 250, 252, 0.5);
+    background: rgba(248, 250, 252, 0.6);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(226, 232, 240, 0.2);
+    border: 1px solid rgba(226, 232, 240, 0.3);
     height: 100%;
-    transition: all 0.3s ease;
-    border-left: 4px solid transparent;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
 }
 
 [data-theme="dark"] .mega-menu-section {
-    background: rgba(55, 65, 81, 0.5);
-    border: 1px solid rgba(75, 85, 99, 0.2);
+    background: rgba(55, 65, 81, 0.6);
+    border: 1px solid rgba(75, 85, 99, 0.3);
 }
 
+/* Subtle hover effect for sections */
 .mega-menu-section:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    background: rgba(255, 255, 255, 0.8);
-    border-left: 4px solid var(--primary-color);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.9);
+    border-left: 3px solid var(--primary-color);
 }
 
 [data-theme="dark"] .mega-menu-section:hover {
-    background: rgba(55, 65, 81, 0.8);
+    background: rgba(55, 65, 81, 0.9);
 }
 
 .mega-menu-title {
@@ -406,94 +404,84 @@ body {
     padding: 0.75rem 0;
     border-radius: 6px;
     display: block;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     position: relative;
     line-height: 1.5;
     font-size: 0.9rem;
 }
 
-.mega-menu-list a::before {
-    content: '';
-    position: absolute;
-    left: -1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 0;
-    width: 3px;
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-    transition: height 0.3s ease;
-    border-radius: 2px;
-}
-
+/* Lighter link hover effect */
 .mega-menu-list a:hover {
     color: var(--primary-color);
-    background: rgba(30, 64, 175, 0.03);
-    padding-left: 1rem;
+    background: rgba(30, 64, 175, 0.02);
+    padding-left: 0.5rem;
     font-weight: 500;
 }
 
-.mega-menu-list a:hover::before {
-    height: 60%;
-}
-
-/* Mega Menu Footer CTA */
+/* Improved Mega Menu Footer - Better Contact Section */
 .mega-menu-footer {
     margin-top: 2rem;
-    padding: 1.5rem;
-    background: linear-gradient(135deg, rgba(30, 64, 175, 0.04), rgba(59, 130, 246, 0.02));
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.05), rgba(59, 130, 246, 0.02));
     border-radius: 16px;
-    border: 1px solid rgba(30, 64, 175, 0.08);
+    border: 1px solid rgba(30, 64, 175, 0.1);
 }
 
 .cta-content h5 {
     color: var(--primary-color);
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .cta-content p {
     color: var(--text-secondary);
     margin-bottom: 0;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
+    align-items: flex-end;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .phone-number {
-    font-weight: 700;
+    font-weight: 800;
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     letter-spacing: 0.5px;
+    text-align: center;
 }
 
 .mega-cta-btn {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
     border: none;
     border-radius: 50px;
-    padding: 0.75rem 2rem;
+    padding: 0.875rem 2.5rem;
     font-weight: 600;
-    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.3);
-    transition: all 0.3s ease;
+    font-size: 1rem;
+    box-shadow: 0 6px 20px rgba(30, 64, 175, 0.25);
+    transition: all 0.2s ease;
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
     text-decoration: none;
+    color: white;
+    min-width: 180px;
+    justify-content: center;
 }
 
 .mega-cta-btn:hover {
     background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
-    transform: translateY(-2px);
-    box-shadow: 0 12px 35px rgba(30, 64, 175, 0.4);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.35);
     color: white;
 }
 
@@ -530,7 +518,7 @@ body {
 
     .mega-menu-footer {
         margin-top: 1rem;
-        padding: 1rem;
+        padding: 1.5rem;
         text-align: center;
     }
 
@@ -542,11 +530,22 @@ body {
     .mega-cta-btn {
         width: 100%;
         justify-content: center;
+        min-width: auto;
     }
 
     .cta-content {
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-content h5 {
+        justify-content: center;
+        font-size: 1.1rem;
+    }
+
+    .phone-number {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
     }
 
     .mega-menu::-webkit-scrollbar {
@@ -587,20 +586,22 @@ body {
     }
 }
 
-/* Animations */
-@keyframes pulse {
+/* Improved Animations */
+@keyframes subtle-pulse {
     0%, 100% {
         transform: scale(1);
+        opacity: 1;
     }
     50% {
-        transform: scale(1.05);
+        transform: scale(1.02);
+        opacity: 0.9;
     }
 }
 
 @keyframes slideInDown {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
     to {
         opacity: 1;
@@ -610,7 +611,7 @@ body {
 
 .navbar-collapse.show,
 .navbar-collapse.collapsing {
-    animation: slideInDown 0.3s ease-out;
+    animation: slideInDown 0.25s ease-out;
 }
 
 /* Scroll Effect */
@@ -621,6 +622,25 @@ body {
 
 [data-theme="dark"] .navbar-scrolled {
     background: rgba(31, 41, 55, 0.98) !important;
+}
+
+/* Desktop-specific contact section improvements */
+@media (min-width: 992px) {
+    .mega-menu-footer .row {
+        align-items: center;
+    }
+    
+    .contact-info {
+        align-items: flex-end;
+    }
+    
+    .cta-content {
+        text-align: left;
+    }
+    
+    .cta-content h5 {
+        justify-content: flex-start;
+    }
 }
 /*  ------------------mega menu end -------------- */
 
