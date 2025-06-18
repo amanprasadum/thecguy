@@ -254,25 +254,7 @@ body {
     color: var(--primary-color);
 }
 
-/* Special Contact Button */
-.contact-btn {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-light)) !important;
-    color: white !important;
-    margin-left: 0.5rem;
-    box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
-}
 
-.contact-btn:hover {
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color)) !important;
-    color: white !important;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(30, 64, 175, 0.4);
-}
-
-.contact-btn .nav-icon {
-    color: white;
-    opacity: 1;
-}
 
 /* Mega Menu Styles - Faster Transitions */
 .mega-dropdown {
@@ -444,64 +426,6 @@ body {
     border: 1px solid rgba(30, 64, 175, 0.1);
 }
 
-.cta-content h5 {
-    color: var(--primary-color);
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-size: 1.2rem;
-}
-
-.cta-content p {
-    color: var(--text-secondary);
-    margin-bottom: 0;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.phone-number {
-    font-weight: 800;
-    color: var(--primary-color);
-    font-size: 1.4rem;
-    letter-spacing: 0.5px;
-    text-align: center;
-}
-
-.mega-cta-btn {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-    border: none;
-    border-radius: 50px;
-    padding: 0.875rem 2.5rem;
-    font-weight: 600;
-    font-size: 1rem;
-    box-shadow: 0 6px 20px rgba(30, 64, 175, 0.25);
-    transition: all 0.2s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    text-decoration: none;
-    color: white;
-    min-width: 180px;
-    justify-content: center;
-}
-
-.mega-cta-btn:hover {
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
-    transform: translateY(-1px);
-    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.35);
-    color: white;
-}
-
 /* Mobile Mega Menu */
 @media (max-width: 991.98px) {
     .mega-menu {
@@ -539,32 +463,7 @@ body {
         text-align: center;
     }
 
-    .contact-info {
-        align-items: center;
-        margin-top: 1rem;
-    }
-
-    .mega-cta-btn {
-        width: 100%;
-        justify-content: center;
-        min-width: auto;
-    }
-
-    .cta-content {
-        text-align: center;
-        margin-bottom: 1.5rem;
-    }
-
-    .cta-content h5 {
-        justify-content: center;
-        font-size: 1.1rem;
-    }
-
-    .phone-number {
-        font-size: 1.3rem;
-        margin-bottom: 0.5rem;
-    }
-
+   
     .mega-menu::-webkit-scrollbar {
         width: 4px;
     }
@@ -597,10 +496,7 @@ body {
         justify-content: flex-start;
     }
 
-    .contact-btn {
-        margin-left: 0;
-        margin-top: 0.5rem;
-    }
+   
 }
 
 /* Improved Animations */
@@ -647,17 +543,7 @@ body {
         align-items: center;
     }
     
-    .contact-info {
-        align-items: flex-end;
-    }
-    
-    .cta-content {
-        text-align: left;
-    }
-    
-    .cta-content h5 {
-        justify-content: flex-start;
-    }
+  
 }
 /*  ------------------mega menu end -------------- */
 
