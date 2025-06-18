@@ -2200,6 +2200,7 @@ body {
 }
 
 .thecguyfooter-description {
+    display: none; /* temporary off */
     line-height: 1.7;
     margin-bottom: 20px;
     color: #ffffff;
