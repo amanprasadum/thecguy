@@ -16,7 +16,7 @@
     overflow: hidden;
 }
 
-.newtcg-hero-video {
+.newtcg-hero-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -256,37 +256,58 @@
 
 .newtcg-service-card {
     background-color: var(--bg-white);
-    padding: 2rem;
     border-radius: 12px;
     box-shadow: var(--shadow-medium);
     transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
 .newtcg-service-card:hover {
     transform: translateY(-5px);
 }
 
+.newtcg-service-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.newtcg-service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.newtcg-service-card:hover .newtcg-service-image img {
+    transform: scale(1.05);
+}
+
+.newtcg-service-content {
+    padding: 2rem;
+}
+
 .newtcg-service-icon {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background-color: var(--primary-color);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--text-white);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 1.5rem;
 }
 
-.newtcg-service-card h4 {
+.newtcg-service-content h4 {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
-.newtcg-service-card p {
+.newtcg-service-content p {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.6;
@@ -360,9 +381,9 @@
 
 .newtcg-why-card {
     background-color: var(--bg-light);
-    padding: 2rem;
     border-radius: 12px;
     transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
 .newtcg-why-card:hover {
@@ -373,6 +394,46 @@
     background-color: var(--primary-color);
     color: var(--text-white);
 }
+
+.newtcg-why-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.newtcg-why-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.newtcg-why-card:hover .newtcg-why-image img {
+    transform: scale(1.05);
+}
+
+.newtcg-why-content {
+    padding: 2rem;
+}
+
+.newtcg-why-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.newtcg-featured .newtcg-why-icon {
+    background-color: var(--text-white);
+    color: var(--primary-color);
+}
+
 
 .newtcg-why-icon {
     width: 60px;
@@ -490,7 +551,7 @@
     .newtcg-hero-title {
         font-size: 2.5rem;
     }
-    
+
     .newtcg-hero-stats {
         position: static;
         transform: none;
@@ -498,21 +559,21 @@
         flex-direction: column;
         gap: 1.5rem;
     }
-    
+
     .newtcg-intro-row {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .newtcg-section-title {
         font-size: 2rem;
     }
-    
+
     .newtcg-services-grid,
     .newtcg-why-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .newtcg-hero-buttons,
     .newtcg-cta-buttons {
         flex-direction: column;
