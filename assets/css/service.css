@@ -264,12 +264,13 @@
 /* Service Detail Sections */
 .newtcg-service-detail {
     padding: 80px 0;
-    background-color: var(--bg-white);
+    background-color: #2551c229;
 }
 
 .newtcg-service-detail:nth-child(even) {
     background-color: var(--bg-light);
 }
+
 .newtcg-service-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -602,7 +603,7 @@
     .newtcg-hero-title {
         font-size: 2.5rem;
     }
-    
+
     .newtcg-hero-stats {
         flex-direction: column;
         gap: 1rem;
@@ -610,49 +611,49 @@
         transform: none;
         margin-top: 2rem;
     }
-    
+
     .newtcg-intro-row,
     .newtcg-service-row,
     .newtcg-showcase-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .newtcg-service-detail.newtcg-reverse .newtcg-service-row {
         grid-template-areas: "content" "image";
     }
-    
+
     .newtcg-service-content,
     .newtcg-service-detail.newtcg-reverse .newtcg-service-content,
     .newtcg-showcase-text {
         padding: 0;
     }
-    
+
     .newtcg-section-title {
         font-size: 2rem;
     }
-    
+
     .newtcg-service-content h3 {
         font-size: 1.75rem;
     }
-    
+
     .newtcg-why-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .newtcg-why-card.newtcg-featured {
         transform: none;
     }
-    
+
     .newtcg-why-card.newtcg-featured:hover {
         transform: translateY(-8px);
     }
-    
+
     .newtcg-hero-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .newtcg-cta-buttons {
         flex-direction: column;
         align-items: center;
@@ -663,15 +664,15 @@
     .newtcg-hero-title {
         font-size: 2rem;
     }
-    
+
     .newtcg-why-card {
         padding: 1.5rem;
     }
-    
+
     .newtcg-cta-section {
         padding: 2rem 1rem;
     }
-    
+
     .newtcg-container {
         padding: 0 15px;
     }
@@ -683,6 +684,7 @@
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -697,15 +699,32 @@
     animation: fadeInUp 0.6s ease-out;
 }
 
-.newtcg-why-card:nth-child(1) { animation-delay: 0.1s; }
-.newtcg-why-card:nth-child(2) { animation-delay: 0.2s; }
-.newtcg-why-card:nth-child(3) { animation-delay: 0.3s; }
-.newtcg-why-card:nth-child(4) { animation-delay: 0.4s; }
-.newtcg-why-card:nth-child(5) { animation-delay: 0.5s; }
-.newtcg-why-card:nth-child(6) { animation-delay: 0.6s; }
+.newtcg-why-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.newtcg-why-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.newtcg-why-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.newtcg-why-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.newtcg-why-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.newtcg-why-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
 
 /* Scroll reveal effect */
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
     .newtcg-service-content,
     .newtcg-service-image {
         opacity: 0;
@@ -718,7 +737,7 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
 
 /* Contact ID anchor for smooth scrolling */
 #contact {
@@ -750,7 +769,7 @@
     .newtcg-why-card {
         border: 2px solid var(--text-primary);
     }
-    
+
     .newtcg-service-overlay {
         background: rgba(0, 0, 0, 0.9);
     }
