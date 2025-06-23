@@ -115,6 +115,7 @@
 }
 
 .newtcg-hero-stats {
+    display: none !important;
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -605,6 +606,7 @@
     }
 
     .newtcg-hero-stats {
+        display: none !important;
         flex-direction: column;
         gap: 1rem;
         position: static;
