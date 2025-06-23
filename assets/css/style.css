@@ -1,42 +1,22 @@
 :root {
-    /* Professional Brand Colors - Solid Colors Only */
     --primary-color: #1e40af;
-    /* Professional deep blue */
     --primary-dark: #1e3a8a;
-    /* Darker blue for hover */
     --primary-light: #3b82f6;
-    /* Lighter blue for accents */
     --secondary-color: #059669;
-    /* Professional green */
     --accent-color: #dc2626;
-    /* Professional red for CTAs */
 
-    /* Text Colors - Enhanced Visibility */
     --text-primary: #1f2937;
-    /* Dark gray for primary text */
     --text-secondary: #4b5563;
-    /* Medium gray for secondary text */
     --text-white: #ffffff;
-    /* Pure white text */
     --text-light: #f9fafb;
-    /* Light text for dark backgrounds */
-
-    /* Background Colors */
     --bg-light: #f8fafc;
-    /* --bg-light: #d7e0e9;               */
     --bg-white: #ffffff;
-    /* Pure white background */
     --bg-primary: #1e40af;
-    /* Primary background */
     --bg-dark: #1f2937;
-    /* Dark background */
-
-    /* Border and Shadow */
     --border-color: #e5e7eb;
     --shadow-light: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-large: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-
     --card-bg-color: #0043a826;
 }
 
@@ -1124,44 +1104,101 @@ body {
     transform: translateY(-3px);
 }
 
-/* About Section */
+/*  -------------------------- About Section start ------------------*/
+/* Enhanced About Section Styles */
 .about-section {
-    padding: 6rem 0;
-    /* background: var(--bg-light); */
-    background: var(--card-bg-color);
+    padding: 8rem 0;
+    background: var(--bg-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="%23e5e7eb" opacity="0.3"/><circle cx="60" cy="40" r="1" fill="%23e5e7eb" opacity="0.2"/><circle cx="80" cy="80" r="1" fill="%23e5e7eb" opacity="0.4"/></svg>');
+    pointer-events: none;
+    z-index: 1;
 }
 
 .about-hero {
     background: var(--primary-color);
     color: var(--text-white);
-    padding: 4rem 0;
+    padding: 5rem 0;
     text-align: center;
-    margin-bottom: 4rem;
-    border-radius: 0 0 50px 50px;
+    margin-bottom: 5rem;
+    border-radius: 0 0 80px 80px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-large);
 }
 
-.about-hero h1,
-.about-hero h2,
-.about-hero p {
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 20px,
+        rgba(255,255,255,0.03) 20px,
+        rgba(255,255,255,0.03) 40px
+    );
+    animation: drift 20s linear infinite;
+}
+
+@keyframes drift {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.about-hero h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
     color: var(--text-white);
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: var(--text-white);
+    position: relative;
+    z-index: 2;
+    opacity: 0.95;
 }
 
 .about-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
     margin-top: 3rem;
+    position: relative;
+    z-index: 2;
 }
 
 .about-card {
     background: var(--bg-white);
-    padding: 2.5rem;
-    border-radius: 20px;
+    padding: 3rem 2.5rem;
+    border-radius: 25px;
     text-align: center;
     box-shadow: var(--shadow-medium);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    border: 2px solid transparent;
+    backdrop-filter: blur(10px);
 }
 
 .about-card::before {
@@ -1170,62 +1207,150 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 6px;
     background: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.about-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(30, 64, 175, 0.05);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease;
+    z-index: -1;
 }
 
 .about-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-15px) scale(1.02);
     box-shadow: var(--shadow-large);
+    border-color: var(--primary-light);
 }
 
-.about-card h3,
-.about-card h4 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+.about-card:hover::before {
+    transform: scaleX(1);
 }
 
-.about-card p {
-    color: var(--text-secondary);
+.about-card:hover::after {
+    width: 300px;
+    height: 300px;
 }
 
 .about-icon {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     background: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.5rem;
-    font-size: 2rem;
+    margin: 0 auto 2rem;
+    font-size: 2.2rem;
     color: white;
-    transition: all 0.3s ease;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.3);
+}
+
+.about-icon::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--primary-light);
+    border-radius: 50%;
+    transform: scale(1.2);
+    opacity: 0;
+    transition: all 0.4s ease;
 }
 
 .about-card:hover .about-icon {
-    transform: scale(1.1) rotate(360deg);
+    transform: scale(1.15) rotate(360deg);
+    background: var(--primary-dark);
+    box-shadow: 0 15px 40px rgba(30, 64, 175, 0.4);
 }
 
-.progress-bar-container {
-    margin-top: 1.5rem;
+.about-card:hover .about-icon::before {
+    transform: scale(1.4);
+    opacity: 0.6;
 }
 
-.progress-bar {
-    width: 100%;
-    height: 8px;
-    background: var(--border-color);
-    border-radius: 50px;
-    overflow: hidden;
+.about-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-.progress-fill {
-    height: 100%;
-    background: var(--primary-color);
-    border-radius: 50px;
-    transition: width 1.5s ease;
+.about-card:hover h4 {
+    color: var(--primary-dark);
 }
 
+.about-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 1rem;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.about-card:hover p {
+    color: var(--text-primary);
+}
+
+/* Stagger animation for cards */
+.about-card:nth-child(1) { animation-delay: 0.1s; }
+.about-card:nth-child(2) { animation-delay: 0.2s; }
+.about-card:nth-child(3) { animation-delay: 0.3s; }
+.about-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 4rem 0;
+    }
+    
+    .about-hero {
+        padding: 3rem 0;
+        margin-bottom: 3rem;
+        border-radius: 0 0 40px 40px;
+    }
+    
+    .about-hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .about-hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .about-cards {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .about-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .about-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+}
+/* ---------------------------About Section End ------------------------------- */
 /* Portfolio Section */
 .portfolio-section {
     padding: 3rem 0;
