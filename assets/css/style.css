@@ -63,12 +63,12 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+    /* line-height: 1.6; */
     color: var(--text-primary);
     background-color: var(--bg-light);
     overflow-x: hidden;
     transition: all 0.3s ease;
-    width: 100%;
+    /* width: 100%; */
 }
 
 /* Navbar - Fixed visibility */
