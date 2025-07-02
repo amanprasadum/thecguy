@@ -1467,7 +1467,7 @@ body {
 }
 
 /* Services Section */
-.services-section {
+/* .services-section {
     padding: 3rem 0;
     background: var(--bg-light);
 }
@@ -1484,7 +1484,6 @@ body {
     overflow: hidden;
 }
 
-/* Remove problematic overlay */
 .service-card::before {
     display: none;
 }
@@ -1521,7 +1520,7 @@ body {
 
 .service-icon.floating {
     animation: float 3s ease-in-out infinite;
-}
+} */
 
 /*  ================================ Testimonials Section start ====================================*/
 .thecguytestimonial-section {
