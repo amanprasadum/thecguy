@@ -784,7 +784,7 @@ body {
 /* Hero Section - Fixed overlay and text visibility */
 .hero-section {
     position: relative;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     height: 100vh;
     display: flex;
     align-items: center;
