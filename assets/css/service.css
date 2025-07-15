@@ -13,6 +13,7 @@
     --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
+
 .newtcg-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -243,11 +244,11 @@
 .newtcg-play-button:hover {
     transform: scale(1.1);
 }
-
-/* Services Overview */
+/* ==============action start =================================== */
+/* Modern Service Sections CSS */
 .newtcg-services-overview {
-    padding: 80px 0 40px;
-    background-color: var(--bg-light);
+    padding: 80px 0 60px;
+    background: linear-gradient(135deg, var(--bg-light), var(--bg-white));
 }
 
 .newtcg-services-header {
@@ -256,89 +257,170 @@
     margin: 0 auto;
 }
 
-.newtcg-section-subtitle {
-    font-size: 1.125rem;
-    color: var(--text-secondary);
-    line-height: 1.6;
+/* Modern Service Grid Layout */
+.newtcg-service-detail {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Service Detail Sections */
-.newtcg-service-detail {
-    padding: 80px 0;
-    background-color: #2551c229;
+.newtcg-service-detail:nth-child(odd) {
+    background: linear-gradient(135deg, #f8fafc, #ffffff);
 }
 
 .newtcg-service-detail:nth-child(even) {
-    background-color: var(--bg-light);
+    background: linear-gradient(135deg, #ffffff, #f1f5f9);
 }
 
 .newtcg-service-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 5rem;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
-.newtcg-service-detail.newtcg-reverse .newtcg-service-row {
-    grid-template-areas: "image content";
-}
-
-.newtcg-service-detail.newtcg-reverse .newtcg-service-image {
-    grid-area: image;
-}
-
-.newtcg-service-detail.newtcg-reverse .newtcg-service-content {
-    grid-area: content;
-}
-
+/* Service Content Styling */
 .newtcg-service-content {
-    padding-right: 2rem;
+    position: relative;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.newtcg-service-detail.newtcg-reverse .newtcg-service-content {
-    padding-right: 0;
-    padding-left: 2rem;
+.newtcg-service-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 20px 20px 0 0;
 }
 
 .newtcg-service-icon-badge {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-    border-radius: 50%;
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--text-white);
     font-size: 1.5rem;
-    margin-bottom: 2rem;
-    box-shadow: var(--shadow-medium);
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.newtcg-service-icon-badge::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    50% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+    100% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
 }
 
 .newtcg-service-content h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 1.5rem;
-    line-height: 1.3;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.newtcg-service-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+    border-radius: 2px;
 }
 
 .newtcg-service-description {
-    font-size: 1.125rem;
+    font-size: 1.1rem;
     color: var(--text-secondary);
     margin-bottom: 2rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .newtcg-service-features-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
 }
 
+.newtcg-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.8rem;
+    background: rgba(16, 185, 129, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border-left: 3px solid var(--secondary-color);
+}
+
+.newtcg-feature-item:hover {
+    background: rgba(16, 185, 129, 0.15);
+    transform: translateX(5px);
+}
+
+.newtcg-feature-item i {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.newtcg-feature-item span {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+/* Service Image Styling */
 .newtcg-service-image {
     position: relative;
+    border-radius: 20px;
     overflow: hidden;
-    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: perspective(1000px) rotateY(5deg);
+    transition: all 0.5s ease;
+}
+
+.newtcg-service-image:hover {
+    transform: perspective(1000px) rotateY(0deg) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.newtcg-service-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.newtcg-service-image:hover img {
+    transform: scale(1.05);
 }
 
 .newtcg-service-overlay {
@@ -347,13 +429,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(30, 64, 175, 0.8), rgba(59, 130, 246, 0.6));
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(16, 185, 129, 0.8));
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding: 2rem;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .newtcg-service-image:hover .newtcg-service-overlay {
@@ -361,418 +442,115 @@
 }
 
 .newtcg-service-badge {
-    background-color: var(--accent-color);
-    color: var(--text-white);
-    padding: 12px 20px;
-    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--primary-color);
+    padding: 15px 25px;
+    border-radius: 30px;
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
 }
 
-/* Process Showcase Section */
-.newtcg-process-showcase {
-    padding: 100px 0;
-    background: linear-gradient(135deg, var(--bg-light), var(--bg-white));
+.newtcg-service-image:hover .newtcg-service-badge {
+    transform: translateY(0);
 }
 
-.newtcg-showcase-content {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 4rem;
-    align-items: center;
+/* Reverse Layout for Alternating Sections */
+.newtcg-service-detail.newtcg-reverse .newtcg-service-row {
+    grid-template-areas: "image content";
 }
 
-.newtcg-showcase-text {
-    padding-right: 2rem;
+.newtcg-service-detail.newtcg-reverse .newtcg-service-image {
+    grid-area: image;
+    transform: perspective(1000px) rotateY(-5deg);
 }
 
-.newtcg-showcase-image {
-    position: relative;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+.newtcg-service-detail.newtcg-reverse .newtcg-service-content {
+    grid-area: content;
 }
 
-.newtcg-showcase-overlay {
+.newtcg-service-detail.newtcg-reverse .newtcg-service-image:hover {
+    transform: perspective(1000px) rotateY(0deg) scale(1.02);
+}
+
+/* Decorative Elements */
+.newtcg-service-detail::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--text-white);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.newtcg-showcase-image:hover .newtcg-showcase-overlay {
-    opacity: 1;
-}
-
-.newtcg-showcase-overlay h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 1rem 0 0.5rem;
-}
-
-.newtcg-showcase-overlay p {
-    font-size: 1rem;
-    opacity: 0.9;
-}
-
-/* Why Choose Us Section */
-.newtcg-why {
-    padding: 100px 0;
-    background-color: var(--bg-white);
-}
-
-.newtcg-why-header {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 4rem;
-}
-
-.newtcg-why-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-bottom: 4rem;
-}
-
-.newtcg-why-card {
-    background-color: var(--bg-white);
-    padding: 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    border: 1px solid #e5e7eb;
-}
-
-.newtcg-why-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-}
-
-.newtcg-why-card.newtcg-featured {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-    color: var(--text-white);
-    transform: scale(1.05);
-}
-
-.newtcg-why-card.newtcg-featured:hover {
-    transform: scale(1.05) translateY(-8px);
-}
-
-.newtcg-why-icon {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, var(--secondary-color), #059669);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-white);
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.newtcg-why-card.newtcg-featured .newtcg-why-icon {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-}
-
-.newtcg-why-content h4 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-}
-
-.newtcg-why-card.newtcg-featured .newtcg-why-content h4 {
-    color: var(--text-white);
-}
-
-.newtcg-why-content p {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-.newtcg-why-card.newtcg-featured .newtcg-why-content p {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.newtcg-why-features {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.newtcg-why-features li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
-    font-size: 0.875rem;
-    color: var(--text-secondary);
-}
-
-.newtcg-why-card.newtcg-featured .newtcg-why-features li {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.newtcg-why-features li:before {
-    content: "✓";
-    color: var(--secondary-color);
-    font-weight: bold;
-    margin-right: 8px;
-}
-
-.newtcg-why-card.newtcg-featured .newtcg-why-features li:before {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-/* CTA Section */
-.newtcg-cta-section {
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
-    padding: 3rem;
-    border-radius: 16px;
-    text-align: center;
-    color: var(--text-white);
-    margin-top: 3rem;
-}
-
-.newtcg-cta-section h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.newtcg-cta-section p {
-    font-size: 1.125rem;
-    opacity: 0.9;
-    margin-bottom: 2rem;
-}
-
-.newtcg-cta-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.newtcg-btn-cta {
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.newtcg-btn-cta.newtcg-btn-primary {
-    background-color: var(--accent-color);
-    color: var(--text-white);
-}
-
-.newtcg-btn-cta.newtcg-btn-primary:hover {
-    background-color: #b91c1c;
-    transform: translateY(-2px);
-}
-
-.newtcg-btn-cta.newtcg-btn-secondary {
-    background-color: transparent;
-    color: var(--text-white);
-    border-color: var(--text-white);
-}
-
-.newtcg-btn-cta.newtcg-btn-secondary:hover {
-    background-color: var(--text-white);
-    color: var(--primary-color);
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="%23e5e7eb" opacity="0.3"/></svg>');
+    background-size: 50px 50px;
+    opacity: 0.5;
+    z-index: 1;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .newtcg-hero-title {
-        font-size: 2.5rem;
+@media (max-width: 1024px) {
+    .newtcg-service-row {
+        gap: 3rem;
     }
-
-    .newtcg-hero-stats {
-        display: none !important;
-        flex-direction: column;
-        gap: 1rem;
-        position: static;
+    
+    .newtcg-service-image {
         transform: none;
-        margin-top: 2rem;
     }
+    
+    .newtcg-service-detail.newtcg-reverse .newtcg-service-image {
+        transform: none;
+    }
+}
 
-    .newtcg-intro-row,
-    .newtcg-service-row,
-    .newtcg-showcase-content {
+@media (max-width: 768px) {
+    .newtcg-service-detail {
+        padding: 60px 0;
+    }
+    
+    .newtcg-service-row {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-
+    
     .newtcg-service-detail.newtcg-reverse .newtcg-service-row {
         grid-template-areas: "content" "image";
     }
-
-    .newtcg-service-content,
-    .newtcg-service-detail.newtcg-reverse .newtcg-service-content,
-    .newtcg-showcase-text {
-        padding: 0;
+    
+    .newtcg-service-content {
+        padding: 1.5rem;
     }
-
-    .newtcg-section-title {
-        font-size: 2rem;
-    }
-
+    
     .newtcg-service-content h3 {
-        font-size: 1.75rem;
+        font-size: 1.8rem;
     }
-
-    .newtcg-why-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .newtcg-why-card.newtcg-featured {
+    
+    .newtcg-service-image {
         transform: none;
     }
-
-    .newtcg-why-card.newtcg-featured:hover {
-        transform: translateY(-8px);
-    }
-
-    .newtcg-hero-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .newtcg-cta-buttons {
-        flex-direction: column;
-        align-items: center;
+    
+    .newtcg-service-image img {
+        height: 250px;
     }
 }
 
 @media (max-width: 480px) {
-    .newtcg-hero-title {
-        font-size: 2rem;
-    }
-
-    .newtcg-why-card {
-        padding: 1.5rem;
-    }
-
-    .newtcg-cta-section {
-        padding: 2rem 1rem;
-    }
-
-    .newtcg-container {
-        padding: 0 15px;
-    }
-}
-
-/* Animation Effects */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.newtcg-hero-content {
-    animation: fadeInUp 1s ease-out;
-}
-
-.newtcg-why-card {
-    animation: fadeInUp 0.6s ease-out;
-}
-
-.newtcg-why-card:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-.newtcg-why-card:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.newtcg-why-card:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-.newtcg-why-card:nth-child(4) {
-    animation-delay: 0.4s;
-}
-
-.newtcg-why-card:nth-child(5) {
-    animation-delay: 0.5s;
-}
-
-.newtcg-why-card:nth-child(6) {
-    animation-delay: 0.6s;
-}
-
-/* Scroll reveal effect */
-/* @media (prefers-reduced-motion: no-preference) {
-    .newtcg-service-content,
-    .newtcg-service-image {
-        opacity: 0;
-        transform: translateY(50px);
-        transition: all 0.8s ease-out;
+    .newtcg-service-content h3 {
+        font-size: 1.5rem;
     }
     
-    .newtcg-service-content.animate,
-    .newtcg-service-image.animate {
-        opacity: 1;
-        transform: translateY(0);
+    .newtcg-service-description {
+        font-size: 1rem;
     }
-} */
-
-/* Contact ID anchor for smooth scrolling */
-#contact {
-    scroll-margin-top: 80px;
-}
-
-/* Additional utility classes */
-.newtcg-text-center {
-    text-align: center;
-}
-
-.newtcg-mb-4 {
-    margin-bottom: 2rem;
-}
-
-.newtcg-mt-4 {
-    margin-top: 2rem;
-}
-
-/* Focus states for accessibility */
-.newtcg-btn:focus,
-.newtcg-btn-cta:focus {
-    outline: 2px solid var(--accent-color);
-    outline-offset: 2px;
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-    .newtcg-why-card {
-        border: 2px solid var(--text-primary);
+    
+    .newtcg-service-features-list {
+        gap: 0.5rem;
     }
-
-    .newtcg-service-overlay {
-        background: rgba(0, 0, 0, 0.9);
+    
+    .newtcg-feature-item {
+        padding: 0.6rem;
     }
 }

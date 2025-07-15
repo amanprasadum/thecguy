@@ -1,0 +1,762 @@
+/* Enhanced Styles for Image + Text Sections */
+:root {
+    --primary-color: #1e40af;
+    --primary-dark: #1e3a8a;
+    --primary-light: #3b82f6;
+    --secondary-color: #10b981;
+    --accent-color: #dc2626;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --text-white: #ffffff;
+    --bg-white: #ffffff;
+    --bg-light: #f8fafc;
+    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.newtcg-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.newtcg-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    overflow: hidden;
+}
+
+.newtcg-hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.newtcg-hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.newtcg-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 64, 175, 0.7);
+    z-index: 2;
+}
+
+.newtcg-hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.newtcg-hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.newtcg-hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.newtcg-hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.newtcg-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.newtcg-btn-primary {
+    background-color: var(--accent-color);
+    color: var(--text-white);
+}
+
+.newtcg-btn-primary:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+}
+
+.newtcg-btn-secondary {
+    background-color: transparent;
+    color: var(--text-white);
+    border-color: var(--text-white);
+}
+
+.newtcg-btn-secondary:hover {
+    background-color: var(--text-white);
+    color: var(--primary-color);
+}
+
+.newtcg-hero-stats {
+    display: none !important;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 3rem;
+    z-index: 3;
+}
+
+.newtcg-stat-item {
+    text-align: center;
+}
+
+.newtcg-stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-white);
+}
+
+.newtcg-stat-label {
+    font-size: 0.875rem;
+    opacity: 0.8;
+}
+
+/* Introduction Section */
+.newtcg-intro {
+    padding: 100px 0;
+    background-color: var(--bg-white);
+}
+
+.newtcg-intro-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.newtcg-section-badge {
+    display: inline-block;
+    background-color: var(--primary-light);
+    color: var(--text-white);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.newtcg-section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.newtcg-section-description {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.newtcg-intro-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.newtcg-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.newtcg-feature-item i {
+    color: var(--secondary-color);
+    font-size: 1.125rem;
+}
+
+.newtcg-intro-image {
+    position: relative;
+}
+
+.newtcg-img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.newtcg-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.newtcg-intro-image:hover .newtcg-image-overlay {
+    opacity: 1;
+}
+
+.newtcg-play-button {
+    width: 80px;
+    height: 80px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.newtcg-play-button:hover {
+    transform: scale(1.1);
+}
+
+/* Services Overview */
+.newtcg-services-overview {
+    padding: 80px 0 40px;
+    background-color: var(--bg-light);
+}
+
+.newtcg-services-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.newtcg-section-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Service Detail Sections */
+.newtcg-service-detail {
+    padding: 80px 0;
+    background-color: #2551c229;
+}
+
+.newtcg-service-detail:nth-child(even) {
+    background-color: var(--bg-light);
+}
+
+.newtcg-service-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.newtcg-service-detail.newtcg-reverse .newtcg-service-row {
+    grid-template-areas: "image content";
+}
+
+.newtcg-service-detail.newtcg-reverse .newtcg-service-image {
+    grid-area: image;
+}
+
+.newtcg-service-detail.newtcg-reverse .newtcg-service-content {
+    grid-area: content;
+}
+
+.newtcg-service-content {
+    padding-right: 2rem;
+}
+
+.newtcg-service-detail.newtcg-reverse .newtcg-service-content {
+    padding-right: 0;
+    padding-left: 2rem;
+}
+
+.newtcg-service-icon-badge {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-medium);
+}
+
+.newtcg-service-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.newtcg-service-description {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.newtcg-service-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.newtcg-service-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.newtcg-service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.8), rgba(59, 130, 246, 0.6));
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.newtcg-service-image:hover .newtcg-service-overlay {
+    opacity: 1;
+}
+
+.newtcg-service-badge {
+    background-color: var(--accent-color);
+    color: var(--text-white);
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Process Showcase Section */
+.newtcg-process-showcase {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--bg-light), var(--bg-white));
+}
+
+.newtcg-showcase-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.newtcg-showcase-text {
+    padding-right: 2rem;
+}
+
+.newtcg-showcase-image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.newtcg-showcase-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-white);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.newtcg-showcase-image:hover .newtcg-showcase-overlay {
+    opacity: 1;
+}
+
+.newtcg-showcase-overlay h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem;
+}
+
+.newtcg-showcase-overlay p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Why Choose Us Section */
+.newtcg-why {
+    padding: 100px 0;
+    background-color: var(--bg-white);
+}
+
+.newtcg-why-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.newtcg-why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.newtcg-why-card {
+    background-color: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.newtcg-why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.newtcg-why-card.newtcg-featured {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: var(--text-white);
+    transform: scale(1.05);
+}
+
+.newtcg-why-card.newtcg-featured:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+.newtcg-why-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--secondary-color), #059669);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.newtcg-why-card.newtcg-featured .newtcg-why-icon {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.newtcg-why-content h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.newtcg-why-card.newtcg-featured .newtcg-why-content h4 {
+    color: var(--text-white);
+}
+
+.newtcg-why-content p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.newtcg-why-card.newtcg-featured .newtcg-why-content p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.newtcg-why-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.newtcg-why-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.newtcg-why-card.newtcg-featured .newtcg-why-features li {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.newtcg-why-features li:before {
+    content: "✓";
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.newtcg-why-card.newtcg-featured .newtcg-why-features li:before {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* CTA Section */
+.newtcg-cta-section {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    padding: 3rem;
+    border-radius: 16px;
+    text-align: center;
+    color: var(--text-white);
+    margin-top: 3rem;
+}
+
+.newtcg-cta-section h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.newtcg-cta-section p {
+    font-size: 1.125rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+.newtcg-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.newtcg-btn-cta {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.newtcg-btn-cta.newtcg-btn-primary {
+    background-color: var(--accent-color);
+    color: var(--text-white);
+}
+
+.newtcg-btn-cta.newtcg-btn-primary:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+}
+
+.newtcg-btn-cta.newtcg-btn-secondary {
+    background-color: transparent;
+    color: var(--text-white);
+    border-color: var(--text-white);
+}
+
+.newtcg-btn-cta.newtcg-btn-secondary:hover {
+    background-color: var(--text-white);
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .newtcg-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .newtcg-hero-stats {
+        display: none !important;
+        flex-direction: column;
+        gap: 1rem;
+        position: static;
+        transform: none;
+        margin-top: 2rem;
+    }
+
+    .newtcg-intro-row,
+    .newtcg-service-row,
+    .newtcg-showcase-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .newtcg-service-detail.newtcg-reverse .newtcg-service-row {
+        grid-template-areas: "content" "image";
+    }
+
+    .newtcg-service-content,
+    .newtcg-service-detail.newtcg-reverse .newtcg-service-content,
+    .newtcg-showcase-text {
+        padding: 0;
+    }
+
+    .newtcg-section-title {
+        font-size: 2rem;
+    }
+
+    .newtcg-service-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .newtcg-why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newtcg-why-card.newtcg-featured {
+        transform: none;
+    }
+
+    .newtcg-why-card.newtcg-featured:hover {
+        transform: translateY(-8px);
+    }
+
+    .newtcg-hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newtcg-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .newtcg-hero-title {
+        font-size: 2rem;
+    }
+
+    .newtcg-why-card {
+        padding: 1.5rem;
+    }
+
+    .newtcg-cta-section {
+        padding: 2rem 1rem;
+    }
+
+    .newtcg-container {
+        padding: 0 15px;
+    }
+}
+
+/* Animation Effects */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.newtcg-hero-content {
+    animation: fadeInUp 1s ease-out;
+}
+
+.newtcg-why-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.newtcg-why-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.newtcg-why-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.newtcg-why-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.newtcg-why-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.newtcg-why-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.newtcg-why-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Contact ID anchor for smooth scrolling */
+#contact {
+    scroll-margin-top: 80px;
+}
+
+/* Additional utility classes */
+.newtcg-text-center {
+    text-align: center;
+}
+
+.newtcg-mb-4 {
+    margin-bottom: 2rem;
+}
+
+.newtcg-mt-4 {
+    margin-top: 2rem;
+}
+
+/* Focus states for accessibility */
+.newtcg-btn:focus,
+.newtcg-btn-cta:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .newtcg-why-card {
+        border: 2px solid var(--text-primary);
+    }
+
+    .newtcg-service-overlay {
+        background: rgba(0, 0, 0, 0.9);
+    }
+}
