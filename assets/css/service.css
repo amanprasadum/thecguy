@@ -11,12 +11,7 @@
     --bg-white: #ffffff;
     --bg-light: #f8fafc;
     --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-.newtcg-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    --shadow-large: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
 /* Hero Section */
@@ -262,27 +257,16 @@
     line-height: 1.6;
 }
 
-/* Service Grid */
-.newtcg-service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
-    padding: 0 20px;
-}
-
+/* Service Cards */
 .newtcg-service-card {
-    background-color: var(--bg-white);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .newtcg-service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--shadow-large);
 }
 
 .newtcg-service-image {
@@ -291,11 +275,10 @@
     height: 200px;
 }
 
-.newtcg-img-fluid {
+.newtcg-service-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 12px 12px 0 0;
 }
 
 .newtcg-service-overlay {
@@ -330,23 +313,6 @@
 
 .newtcg-service-content {
     padding: 2rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.newtcg-service-icon-badge {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-white);
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-    box-shadow: var(--shadow-medium);
 }
 
 .newtcg-service-content h3 {
@@ -361,7 +327,6 @@
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.6;
-    flex-grow: 1;
 }
 
 .newtcg-service-features-list {
@@ -374,6 +339,7 @@
 .newtcg-feature-item {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     font-size: 0.875rem;
     color: var(--text-secondary);
@@ -385,10 +351,54 @@
 }
 
 .newtcg-service-cta {
-    align-self: flex-start;
     padding: 12px 24px;
     font-size: 0.875rem;
-    margin-top: auto;
+}
+
+/* Horizontal Card */
+.newtcg-horizontal-card {
+    background: linear-gradient(135deg, var(--bg-white), #f3f4f6);
+}
+
+.newtcg-horizontal-card .card-img {
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.newtcg-horizontal-card .newtcg-service-content {
+    padding: 2.5rem;
+}
+
+/* Card with Tabs */
+.newtcg-service-card .nav-tabs {
+    border-bottom: 2px solid var(--primary-light);
+    margin-bottom: 1.5rem;
+}
+
+.newtcg-service-card .nav-link {
+    color: var(--text-primary);
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.newtcg-service-card .nav-link.active {
+    color: var(--accent-color);
+    border-bottom-color: var(--accent-color);
+    background: none;
+}
+
+.newtcg-service-card .nav-link:hover {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-light);
+}
+
+.newtcg-service-card .tab-content {
+    padding: 1.5rem 0;
 }
 
 /* Process Showcase Section */
@@ -412,7 +422,7 @@
     position: relative;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-medium);
 }
 
 .newtcg-showcase-overlay {
@@ -470,14 +480,14 @@
     background-color: var(--bg-white);
     padding: 2.5rem;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow-medium);
     transition: all 0.3s ease;
     border: 1px solid #e5e7eb;
 }
 
 .newtcg-why-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--shadow-large);
 }
 
 .newtcg-why-card.newtcg-featured {
@@ -640,13 +650,22 @@
         gap: 2rem;
     }
 
-    .newtcg-service-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
     .newtcg-service-image {
         height: 180px;
+    }
+
+    .newtcg-horizontal-card .row {
+        flex-direction: column;
+    }
+
+    .newtcg-horizontal-card .card-img {
+        height: 250px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
+    }
+
+    .newtcg-horizontal-card .newtcg-service-content {
+        padding: 1.5rem;
     }
 
     .newtcg-service-content {
@@ -678,6 +697,11 @@
     .newtcg-showcase-text {
         padding: 0;
     }
+
+    .newtcg-service-card .nav-tabs .nav-link {
+        padding: 8px 12px;
+        font-size: 0.875rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -687,6 +711,10 @@
 
     .newtcg-service-image {
         height: 160px;
+    }
+
+    .newtcg-horizontal-card .card-img {
+        height: 200px;
     }
 
     .newtcg-service-content {
@@ -708,10 +736,6 @@
     .newtcg-cta-section {
         padding: 2rem 1rem;
     }
-
-    .newtcg-container {
-        padding: 0 15px;
-    }
 }
 
 /* Animation Effects */
@@ -720,7 +744,6 @@
         opacity: 0;
         transform: translateY(30px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
