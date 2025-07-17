@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,27 +16,23 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/service.css">
 </head>
-
 <body>
     <div class="custom-cursor"></div>
 
-    <nav class="navbar navbar-expand-lg fixed-top-off">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="../../index.html">
+            <a class="navbar-brand" href="../../index.html" aria-label="The Caulking Guys Home">
                 <div class="brand-content">
                     <i class="fas fa-tools brand-icon"></i>
                     <span class="brand-text">The Caulking Guys</span>
                 </div>
             </a>
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="toggler-line"></span>
                 <span class="toggler-line"></span>
                 <span class="toggler-line"></span>
@@ -45,7 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="../../index.html">
+                        <a class="nav-link" href="../../index.html" aria-current="page">
                             <i class="fas fa-home nav-icon"></i>
                             <span>Home</span>
                         </a>
@@ -57,24 +52,17 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-cogs nav-icon"></i>
                             <span>Services</span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="./commercial-caulking.html">
-                                    <i class="fas fa-building"></i> Commercial Caulking</a></li>
-                            <li><a class="dropdown-item" href="./residential-caulking.html">
-                                    <i class="fas fa-home"></i> Residential Caulking</a></li>
-                            <li><a class="dropdown-item" href="./fire-caulking.html">
-                                    <i class="fas fa-fire-extinguisher"></i> Fire Caulking</a></li>
-                            <li><a class="dropdown-item" href="./external-sealing.html">
-                                    <i class="fas fa-shield-alt"></i> External Sealing</a></li>
-                            <li><a class="dropdown-item" href="./internal-sealing.html">
-                                    <i class="fas fa-tools"></i> Internal Sealing</a></li>
-                            <li><a class="dropdown-item" href="./remedial-caulking.html">
-                                    <i class="fas fa-wrench"></i> Remedial Caulking</a></li>
+                            <li><a class="dropdown-item" href="./commercial-caulking.html"><i class="fas fa-building"></i> Commercial Caulking</a></li>
+                            <li><a class="dropdown-item" href="./residential-caulking.html"><i class="fas fa-home"></i> Residential Caulking</a></li>
+                            <li><a class="dropdown-item" href="./fire-caulking.html"><i class="fas fa-fire-extinguisher"></i> Fire Caulking</a></li>
+                            <li><a class="dropdown-item" href="./external-sealing.html"><i class="fas fa-shield-alt"></i> External Sealing</a></li>
+                            <li><a class="dropdown-item" href="./internal-sealing.html"><i class="fas fa-tools"></i> Internal Sealing</a></li>
+                            <li><a class="dropdown-item" href="./remedial-caulking.html"><i class="fas fa-wrench"></i> Remedial Caulking</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -95,17 +83,18 @@
         </div>
         <div class="newtcg-hero-overlay"></div>
         <div class="newtcg-hero-content">
-            <h1 class="newtcg-hero-title">Your Fire Protection Specialists in Sydney</h1>
-            <p class="newtcg-hero-subtitle">Quality fire caulking for your properties</p>
+            <span class="newtcg-section-badge">Fire Protection Experts</span>
+            <h1 class="newtcg-hero-title">Premier Fire Caulking in Sydney</h1>
+            <p class="newtcg-hero-subtitle">Protecting your property with top-tier fire safety solutions</p>
             <div class="newtcg-hero-buttons">
-                <a href="#contact" class="newtcg-btn newtcg-btn-primary">Get Free Quote</a>
-                <a href="#services-detail" class="newtcg-btn newtcg-btn-secondary">Learn More</a>
+                <a href="#contact" class="newtcg-btn newtcg-btn-primary">Request a Free Quote</a>
+                <a href="#services-detail" class="newtcg-btn newtcg-btn-secondary">Explore Services</a>
             </div>
         </div>
         <div class="newtcg-hero-stats">
             <div class="newtcg-stat-item">
                 <span class="newtcg-stat-number">15+</span>
-                <span class="newtcg-stat-label">Years Experience</span>
+                <span class="newtcg-stat-label">Years of Expertise</span>
             </div>
             <div class="newtcg-stat-item">
                 <span class="newtcg-stat-number">500+</span>
@@ -113,7 +102,7 @@
             </div>
             <div class="newtcg-stat-item">
                 <span class="newtcg-stat-number">100%</span>
-                <span class="newtcg-stat-label">Satisfaction Rate</span>
+                <span class="newtcg-stat-label">Client Satisfaction</span>
             </div>
         </div>
     </section>
@@ -123,32 +112,32 @@
         <div class="newtcg-container">
             <div class="newtcg-intro-row">
                 <div class="newtcg-intro-content">
-                    <span class="newtcg-section-badge">Fire Caulking Services</span>
-                    <h2 class="newtcg-section-title">About Fire Caulking</h2>
+                    <span class="newtcg-section-badge">About Us</span>
+                    <h2 class="newtcg-section-title">Expert Fire Caulking Solutions</h2>
                     <p class="newtcg-section-description">
-                        At The Caulking Guys, we pride ourselves on being the leading fire protection specialists in
-                        Sydney. Our expertise in fire-rated sealing and fire-stopping ensures that your property is
-                        safeguarded against the devastating effects of fire. With a commitment to safety, quality, and
-                        reliability, we provide the best fire caulking services in Sydney.
+                        The Caulking Guys are Sydney’s trusted fire protection specialists, delivering high-quality fire-rated sealing and stopping solutions. Our commitment to safety and precision ensures your property meets stringent fire safety standards.
                     </p>
                     <div class="newtcg-intro-features">
                         <div class="newtcg-feature-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Safety Compliance</span>
+                            <span>Certified Safety Compliance</span>
                         </div>
                         <div class="newtcg-feature-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Quality Materials</span>
+                            <span>Premium Materials</span>
                         </div>
                         <div class="newtcg-feature-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Reliable Service</span>
+                            <span>Trusted Reliability</span>
                         </div>
                     </div>
                 </div>
                 <div class="newtcg-intro-image">
-                    <img src="../../assets/images/fire-caulking-service.jpg" alt="Professional fire caulking service in progress" class="newtcg-img-fluid" loading="lazy">
+                    <img src="../../assets/images/fire-caulking-service.jpg" alt="Professional fire caulking in action" class="newtcg-img-fluid" loading="lazy">
                     <div class="newtcg-image-overlay">
+                        <div class="newtcg-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,10 +149,9 @@
         <div class="container">
             <div class="newtcg-services-header text-center mb-5">
                 <span class="newtcg-section-badge">Our Services</span>
-                <h2 class="newtcg-section-title">Fire Protection Excellence</h2>
-                <p class="newtcg-section-subtitle">Comprehensive fire safety solutions designed to protect lives and property with cutting-edge technology and expert craftsmanship.</p>
+                <h2 class="newtcg-section-title">Comprehensive Fire Protection</h2>
+                <p class="newtcg-section-subtitle">Tailored fire safety solutions to safeguard your property with advanced technology and expert craftsmanship.</p>
             </div>
-
             <div class="row g-4">
                 <!-- Fire Stopping Card -->
                 <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="100">
@@ -174,7 +162,7 @@
                         <div class="newtcg-service-content">
                             <h3 class="newtcg-service-title">Fire Stopping Solutions</h3>
                             <p class="newtcg-service-description">
-                                Advanced fire barrier systems that prevent fire and smoke spread through building penetrations, ensuring maximum protection for occupants and property.
+                                Robust fire barrier systems to prevent fire and smoke spread, ensuring maximum safety for your property.
                             </p>
                             <div class="newtcg-service-features">
                                 <div class="newtcg-feature-item">
@@ -191,13 +179,12 @@
                                 </div>
                             </div>
                             <a href="#contact" class="newtcg-service-btn">
-                                <span>Get Quote</span>
+                                <span>Get a Quote</span>
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <!-- Fire Rated Sealing Card -->
                 <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="200">
                     <div class="newtcg-service-card newtcg-featured">
@@ -207,7 +194,7 @@
                         <div class="newtcg-service-content">
                             <h3 class="newtcg-service-title">Fire Rated Sealing</h3>
                             <p class="newtcg-service-description">
-                                Professional sealing systems that maintain fire resistance ratings across all building penetrations, meeting the highest safety standards.
+                                High-performance sealing systems to maintain fire resistance across building penetrations, meeting strict safety standards.
                             </p>
                             <div class="newtcg-service-features">
                                 <div class="newtcg-feature-item">
@@ -224,13 +211,12 @@
                                 </div>
                             </div>
                             <a href="#contact" class="newtcg-service-btn">
-                                <span>Get Quote</span>
+                                <span>Get a Quote</span>
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <!-- Caulking Solutions - Tabbed Card -->
                 <div class="col-12" data-aos="fade-up" data-aos-delay="300">
                     <div class="newtcg-caulking-card">
@@ -238,35 +224,30 @@
                             <div class="newtcg-service-icon">
                                 <i class="fas fa-tools"></i>
                             </div>
-                            <h3 class="newtcg-service-title">Professional Caulking Solutions</h3>
-                            <p class="newtcg-service-description">Specialized caulking applications for various fire protection needs</p>
+                            <h3 class="newtcg-service-title">Specialized Caulking Solutions</h3>
+                            <p class="newtcg-service-description">Customized caulking applications for diverse fire protection needs.</p>
                         </div>
-                        
                         <div class="newtcg-caulking-tabs">
                             <div class="newtcg-tab-nav">
-                                <button class="newtcg-tab-btn active" data-tab="intumescent">
-                                    <i class="fas fa-expand-arrows-alt"></i>
-                                    Intumescent
+                                <button class="newtcg-tab-btn active" data-tab="intumescent" aria-selected="true">
+                                    <i class="fas fa-expand-arrows-alt"></i> Intumescent
                                 </button>
-                                <button class="newtcg-tab-btn" data-tab="silicone">
-                                    <i class="fas fa-droplet"></i>
-                                    Silicone
+                                <button class="newtcg-tab-btn" data-tab="silicone" aria-selected="false">
+                                    <i class="fas fa-droplet"></i> Silicone
                                 </button>
-                                <button class="newtcg-tab-btn" data-tab="acrylic">
-                                    <i class="fas fa-paint-roller"></i>
-                                    Acrylic
+                                <button class="newtcg-tab-btn" data-tab="acrylic" aria-selected="false">
+                                    <i class="fas fa-paint-roller"></i> Acrylic
                                 </button>
                             </div>
-                            
                             <div class="newtcg-tab-content">
                                 <div class="newtcg-tab-pane active" id="intumescent">
                                     <div class="newtcg-tab-info">
                                         <h4>Intumescent Caulking</h4>
-                                        <p>Expands when exposed to heat, creating an effective barrier that seals gaps and prevents fire spread through building structures.</p>
+                                        <p>Heat-activated caulking that expands to seal gaps, preventing fire and smoke spread.</p>
                                         <div class="newtcg-tab-features">
-                                            <span><i class="fas fa-thermometer-half"></i> Heat Expansion Technology</span>
+                                            <span><i class="fas fa-thermometer-half"></i> Heat Expansion</span>
                                             <span><i class="fas fa-fire"></i> Fire Containment</span>
-                                            <span><i class="fas fa-gap"></i> Gap Sealing Excellence</span>
+                                            <span><i class="fas fa-gap"></i> Gap Sealing</span>
                                         </div>
                                     </div>
                                     <a href="#contact" class="newtcg-service-btn">
@@ -274,14 +255,13 @@
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </div>
-                                
                                 <div class="newtcg-tab-pane" id="silicone">
                                     <div class="newtcg-tab-info">
                                         <h4>Silicone Caulking</h4>
-                                        <p>Flexible, durable sealing solution that maintains integrity across temperature variations and environmental conditions.</p>
+                                        <p>Durable, flexible sealing for temperature extremes and environmental durability.</p>
                                         <div class="newtcg-tab-features">
                                             <span><i class="fas fa-expand-arrows-alt"></i> Flexible Sealing</span>
-                                            <span><i class="fas fa-temperature-high"></i> Temperature Resistant</span>
+                                            <span><i class="fas fa-temperature-high"></i> Temperature Resistance</span>
                                             <span><i class="fas fa-shield-virus"></i> Durable Protection</span>
                                         </div>
                                     </div>
@@ -290,15 +270,14 @@
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </div>
-                                
                                 <div class="newtcg-tab-pane" id="acrylic">
                                     <div class="newtcg-tab-info">
                                         <h4>Acrylic Caulking</h4>
-                                        <p>Easy-to-apply, paintable solution perfect for interior fire protection applications requiring seamless integration.</p>
+                                        <p>Paintable, easy-to-apply caulking ideal for interior fire protection.</p>
                                         <div class="newtcg-tab-features">
                                             <span><i class="fas fa-brush"></i> Easy Application</span>
                                             <span><i class="fas fa-palette"></i> Paintable Finish</span>
-                                            <span><i class="fas fa-home"></i> Interior Suitable</span>
+                                            <span><i class="fas fa-home"></i> Interior Suitability</span>
                                         </div>
                                     </div>
                                     <a href="#contact" class="newtcg-service-btn">
@@ -310,7 +289,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Penetration Seals Card -->
                 <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="400">
                     <div class="newtcg-service-card">
@@ -320,7 +298,7 @@
                         <div class="newtcg-service-content">
                             <h3 class="newtcg-service-title">Penetration Seals</h3>
                             <p class="newtcg-service-description">
-                                Specialized sealing around pipes, cables, and ducts to maintain fire resistance ratings and ensure comprehensive building protection.
+                                Expert sealing for pipes, cables, and ducts to maintain fire resistance ratings.
                             </p>
                             <div class="newtcg-service-features">
                                 <div class="newtcg-feature-item">
@@ -337,13 +315,12 @@
                                 </div>
                             </div>
                             <a href="#contact" class="newtcg-service-btn">
-                                <span>Get Quote</span>
+                                <span>Get a Quote</span>
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <!-- Emergency Services Card -->
                 <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="500">
                     <div class="newtcg-service-card newtcg-emergency">
@@ -353,7 +330,7 @@
                         <div class="newtcg-service-content">
                             <h3 class="newtcg-service-title">24/7 Emergency Response</h3>
                             <p class="newtcg-service-description">
-                                Rapid response fire protection services for urgent situations, ensuring immediate safety and compliance restoration.
+                                Immediate fire protection services for urgent situations, ensuring rapid safety restoration.
                             </p>
                             <div class="newtcg-service-features">
                                 <div class="newtcg-feature-item">
@@ -370,7 +347,7 @@
                                 </div>
                             </div>
                             <a href="#contact" class="newtcg-service-btn">
-                                <span>Call Now</span>
+                                <span>Contact Now</span>
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -383,22 +360,26 @@
     <!-- Contact Section -->
     <section id="contact" class="newtcg-contact py-5">
         <div class="container">
-            <h2 class="newtcg-section-title text-center">Get in Touch</h2>
+            <div class="newtcg-services-header text-center mb-5">
+                <span class="newtcg-section-badge">Contact Us</span>
+                <h2 class="newtcg-section-title">Get in Touch</h2>
+                <p class="newtcg-section-subtitle">Reach out for a free consultation or quote for your fire caulking needs.</p>
+            </div>
             <form id="contactForm" class="newtcg-contact-form">
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
                 </div>
                 <button type="submit" class="newtcg-btn newtcg-btn-primary btn-submit">
-                    Submit <span class="loading" style="display: none;">...</span>
+                    Send Message <span class="loading" style="display: none;">...</span>
                 </button>
             </form>
         </div>
@@ -411,14 +392,13 @@
                 <div class="thecguyfooter-section thecguyfooter-company-info">
                     <h3 class="thecguyfooter-title">The Caulking Guy</h3>
                     <p class="thecguyfooter-description">
-                        Sydney's premier caulking specialists, providing high-quality sealing and waterproofing
-                        solutions for homes and businesses since 2008.
+                        Sydney's trusted caulking specialists, delivering superior sealing and fire protection solutions since 2008.
                     </p>
                     <div class="thecguyfooter-social-links">
-                        <a href="#" class="thecguyfooter-social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="thecguyfooter-social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="thecguyfooter-social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="thecguyfooter-social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="thecguyfooter-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="thecguyfooter-social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="thecguyfooter-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="thecguyfooter-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="thecguyfooter-section">
@@ -450,11 +430,11 @@
                         </p>
                         <p class="thecguyfooter-contact-item">
                             <i class="fas fa-phone"></i>
-                            0434797473
+                            <a href="tel:0434797473">0434797473</a>
                         </p>
                         <p class="thecguyfooter-contact-item">
                             <i class="fas fa-envelope"></i>
-                            thiagobiker@gmail.com
+                            <a href="mailto:thiagobiker@gmail.com">thiagobiker@gmail.com</a>
                         </p>
                         <p class="thecguyfooter-contact-item">
                             <i class="fas fa-clock"></i>
@@ -491,14 +471,6 @@
             cursor.style.top = `${e.clientY}px`;
         });
 
-        // Theme Toggle
-        function toggleTheme() {
-            document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
-            const themeIcon = document.querySelector('.theme-toggle i');
-            themeIcon.classList.toggle('fa-moon');
-            themeIcon.classList.toggle('fa-sun');
-        }
-
         // Scroll to Top
         const scrollTopBtn = document.querySelector('.scroll-top');
         window.addEventListener('scroll', () => {
@@ -534,29 +506,20 @@
             }, 2000);
         });
 
-        // Intersection Observer for Animations
-        const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.2 });
-
-        animatedElements.forEach(element => observer.observe(element));
-
         // Tab Functionality for Caulking Solutions
         document.querySelectorAll('.newtcg-tab-btn').forEach(button => {
             button.addEventListener('click', () => {
                 const tabId = button.getAttribute('data-tab');
-                document.querySelectorAll('.newtcg-tab-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.newtcg-tab-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-selected', 'false');
+                });
                 document.querySelectorAll('.newtcg-tab-pane').forEach(pane => pane.classList.remove('active'));
                 button.classList.add('active');
+                button.setAttribute('aria-selected', 'true');
                 document.getElementById(tabId).classList.add('active');
             });
         });
     </script>
 </body>
-
 </html>
