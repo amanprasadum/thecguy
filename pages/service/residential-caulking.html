@@ -15,6 +15,101 @@
 
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/service.css">
+    <style>
+        .feature-card {
+    background: var(--bg-white);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e5e7eb;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 2rem;
+    color: var(--text-white);
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.feature-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.services-section {
+    background: var(--bg-light);
+    padding: 80px 0;
+}
+
+.service-card {
+    background: var(--bg-white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.service-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.service-list {
+    list-style: none;
+    margin-bottom: 25px;
+    padding-left: 0;
+}
+
+.service-list li {
+    padding: 8px 0;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: 25px;
+}
+
+.service-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.service-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+    </style>
 
 </head>
 
@@ -152,48 +247,48 @@
         </div>
     </section>
 
-<section class="thecguy_service-py-5">
-    <div class="thecguy_service-container">
-        <h2 class="thecguy_service-section-title">Why Choose "The Caulking Guys" Sydney Residential Caulker?</h2>
-
-        <div class="thecguy_service-row g-4 mt-4">
-            <div class="thecguy_service-col-lg-4 thecguy_service-col-md-6">
-                <div class="thecguy_service-feature-card">
-                    <div class="thecguy_service-feature-icon">🏆</div>
-                    <h3 class="thecguy_service-feature-title">Expertise</h3>
-                    <p class="thecguy_service-feature-description">Our team comprises highly skilled and experienced caulkers, dedicated to achieving flawless, long-lasting results.</p>
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title">Why Choose "The Caulking Guys" Sydney Residential Caulker?</h2>
+        
+        <div class="row g-4 mt-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="feature-title">Expertise</h3>
+                    <p class="feature-description">Our team comprises highly skilled and experienced caulkers, dedicated to achieving flawless, long-lasting results.</p>
                 </div>
             </div>
-
-            <div class="thecguy_service-col-lg-4 thecguy_service-col-md-6">
-                <div class="thecguy_service-feature-card">
-                    <div class="thecguy_service-feature-icon">🎯</div>
-                    <h3 class="thecguy_service-feature-title">Specialization</h3>
-                    <p class="thecguy_service-feature-description">We specialize in residential interior caulking and residential exterior caulking, ensuring comprehensive coverage for your home.</p>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Specialization</h3>
+                    <p class="feature-description">We specialize in residential interior caulking and residential exterior caulking, ensuring comprehensive coverage for your home.</p>
                 </div>
             </div>
-
-            <div class="thecguy_service-col-lg-4 thecguy_service-col-md-6">
-                <div class="thecguy_service-feature-card">
-                    <div class="thecguy_service-feature-icon">⭐</div>
-                    <h3 class="thecguy_service-feature-title">Customer Satisfaction</h3>
-                    <p class="thecguy_service-feature-description">At The Caulking Guys Residential Sydney Caulker, customer satisfaction is our utmost priority. We aim to exceed expectations with every residential caulking project we undertake.</p>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3 class="feature-title">Customer Satisfaction</h3>
+                    <p class="feature-description">At The Caulking Guys Residential Sydney Caulker, customer satisfaction is our utmost priority. We aim to exceed expectations with every residential caulking project we undertake.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="thecguy_service-services-section">
-    <div class="thecguy_service-container">
-        <h2 class="thecguy_service-section-title">Our Services</h2>
-
-        <div class="thecguy_service-row g-4 mt-4">
-            <div class="thecguy_service-col-lg-6">
-                <div class="thecguy_service-service-card">
-                    <h3 class="thecguy_service-service-title">Residential Interior Caulking Services in Sydney</h3>
-                    <p class="thecguy_service-service-description">Our interior residential caulking services in Sydney are designed to enhance the energy efficiency of your home, prevent drafts, and protect against moisture. We offer caulking for:</p>
-                    <ul class="thecguy_service-service-list">
+    <section class="services-section">
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        
+        <div class="row g-4 mt-4">
+            <div class="col-lg-6">
+                <div class="service-card">
+                    <h3 class="service-title">Residential Interior Caulking Services in Sydney</h3>
+                    <p class="service-description">Our interior residential caulking services in Sydney are designed to enhance the energy efficiency of your home, prevent drafts, and protect against moisture. We offer caulking for:</p>
+                    <ul class="service-list">
                         <li><strong>Windows and Doors:</strong> Sealing gaps around windows and doors to improve insulation and reduce energy costs.</li>
                         <li><strong>Baseboards and Trim:</strong> Ensuring a clean, polished look and preventing dust and pests from entering through gaps.</li>
                         <li><strong>Kitchens and Bathrooms:</strong> Protecting against water damage and mold growth by sealing sinks, tubs, and countertops.</li>
@@ -201,12 +296,12 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="thecguy_service-col-lg-6">
-                <div class="thecguy_service-service-card">
-                    <h3 class="thecguy_service-service-title">Residential Exterior Caulking Services in Sydney</h3>
-                    <p class="thecguy_service-service-description">Our exterior residential caulking services in Sydney protect your home from harsh weather conditions, ensuring longevity and durability. We provide caulking for:</p>
-                    <ul class="thecguy_service-service-list">
+            
+            <div class="col-lg-6">
+                <div class="service-card">
+                    <h3 class="service-title">Residential Exterior Caulking Services in Sydney</h3>
+                    <p class="service-description">Our exterior residential caulking services in Sydney protect your home from harsh weather conditions, ensuring longevity and durability. We provide caulking for:</p>
+                    <ul class="service-list">
                         <li><strong>Siding and Cladding:</strong> Sealing joints and seams to prevent water infiltration and maintain structural integrity.</li>
                         <li><strong>Window and Door Frames:</strong> Ensuring a tight seal to keep out drafts and moisture.</li>
                         <li><strong>Roof Joints and Vents:</strong> Protecting your roof from leaks and weather damage.</li>
