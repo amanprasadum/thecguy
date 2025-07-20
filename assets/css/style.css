@@ -1119,7 +1119,7 @@ body {
     padding: 5rem 0;
     text-align: center;
     margin-bottom: 6rem;
-    border-radius: 0 0 80px 80px;
+    /* border-radius: 0 0 80px 80px; */
     position: relative;
     box-shadow: var(--shadow-large);
 }
