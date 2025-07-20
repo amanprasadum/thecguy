@@ -958,14 +958,14 @@ body {
 }
 
 /* About Section - Fixed backgrounds and text */
-.tcg-about-hero {
+/* .tcg-about-hero {
     margin-top: 80px;
     background: var(--primary-color);
     color: var(--text-white);
     padding: 6rem 0 8rem;
     position: relative;
     overflow: hidden;
-}
+} */
 
 .tcg-about-hero::before {
     content: '';
