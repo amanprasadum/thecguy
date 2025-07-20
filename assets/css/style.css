@@ -1107,7 +1107,7 @@ body {
 /*  -------------------------- About Section start ------------------*/
 /* Enhanced About Section with Image-Text Layout */
 .about-section {
-    padding: 8rem 0;
+    /* padding: 8rem 0; */
     background: var(--bg-light);
     position: relative;
     overflow: hidden;
